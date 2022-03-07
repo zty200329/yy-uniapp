@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tui-form": "/components/thorui/tui-form/tui-form",
+    "tui-input": "/components/thorui/tui-input/tui-input",
+    "tui-radio-group": "/components/thorui/tui-radio-group/tui-radio-group",
+    "tui-label": "/components/thorui/tui-label/tui-label",
+    "tui-radio": "/components/thorui/tui-radio/tui-radio",
+    "tui-button": "/components/thorui/tui-button/tui-button",
+    "tui-toast": "/components/thorui/tui-toast/tui-toast",
+    "tui-datetime": "/components/thorui/tui-datetime/tui-datetime"
+  }
+}

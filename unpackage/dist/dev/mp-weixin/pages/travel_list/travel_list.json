@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tui-button": "/components/thorui/tui-button/tui-button",
+    "tki-qrcode": "/components/tki-qrcode/tki-qrcode",
+    "tui-list-view": "/components/thorui/tui-list-view/tui-list-view"
+  }
+}

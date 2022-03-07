@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tui-button": "/components/thorui/tui-button/tui-button",
+    "tui-picker": "/components/thorui/tui-picker/tui-picker",
+    "tui-list-view": "/components/thorui/tui-list-view/tui-list-view",
+    "tui-gallery": "/components/thorui/tui-gallery/tui-gallery"
+  }
+}

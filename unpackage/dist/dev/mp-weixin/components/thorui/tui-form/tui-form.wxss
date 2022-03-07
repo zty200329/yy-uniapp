@@ -1,0 +1,51 @@
+
+.tui-form__box.data-v-46eadb26 {
+
+	width: 100%;
+	box-sizing: border-box;
+
+	flex: 1;
+	position: relative;
+}
+.tui-form__errmsg.data-v-46eadb26 {
+	position: fixed;
+	z-index: 900;
+	text-align: center;
+	left: 20rpx;
+	right: 20rpx;
+
+	box-sizing: border-box;
+	display: flex;
+	word-break: break-all;
+
+	align-items: center;
+	justify-content: center;
+	padding: 24rpx;
+	opacity: 0;
+	-webkit-transform: translateZ(0) translateY(-100%);
+	        transform: translateZ(0) translateY(-100%);
+	transition-property: opacity, -webkit-transform;
+	transition-property: transform, opacity;
+	transition-property: transform, opacity, -webkit-transform;
+	transition-duration: 0.25s;
+	transition-delay: 0s;
+	transition-timing-function: ease-in-out;
+}
+.tui-form__text.data-v-46eadb26 {
+	text-align: center;
+}
+.tui-message__show.data-v-46eadb26 {
+	-webkit-transform: translateY(0) translateZ(0);
+	        transform: translateY(0) translateZ(0);
+	opacity: 1;
+}
+.tui-form__mask.data-v-46eadb26 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0);
+	z-index: 99;
+}
+
