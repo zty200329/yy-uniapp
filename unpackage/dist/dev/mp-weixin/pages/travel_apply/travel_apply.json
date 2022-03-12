@@ -11,7 +11,6 @@
     "tui-radio-group": "/components/thorui/tui-radio-group/tui-radio-group",
     "tui-label": "/components/thorui/tui-label/tui-label",
     "tui-radio": "/components/thorui/tui-radio/tui-radio",
-    "tui-form-button": "/components/thorui/tui-form-button/tui-form-button",
     "tui-toast": "/components/thorui/tui-toast/tui-toast"
   }
 }

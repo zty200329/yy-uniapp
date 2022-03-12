@@ -1,6 +1,9 @@
 {
   "navigationBarTitleText": "扬扬小宝贝",
   "usingComponents": {
-    "tui-grid-item": "/components/thorui/tui-grid-item/tui-grid-item"
+    "tui-notice-bar": "/components/thorui/tui-notice-bar/tui-notice-bar",
+    "tui-icon": "/components/thorui/tui-icon/tui-icon",
+    "tui-grid-item": "/components/thorui/tui-grid-item/tui-grid-item",
+    "tui-button": "/components/thorui/tui-button/tui-button"
   }
 }

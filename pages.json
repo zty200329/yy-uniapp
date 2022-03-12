@@ -47,6 +47,24 @@
             }
             
         }
+        ,{
+            "path" : "pages/out_register/out_register",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/send_message/send_message",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"easycom": {
 		"autoscan": true,

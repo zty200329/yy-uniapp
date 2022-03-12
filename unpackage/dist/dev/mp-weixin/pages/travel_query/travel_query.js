@@ -94,16 +94,16 @@ var components
 try {
   components = {
     tuiButton: function() {
-      return __webpack_require__.e(/*! import() | components/thorui/tui-button/tui-button */ "components/thorui/tui-button/tui-button").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-button/tui-button.vue */ 113))
+      return __webpack_require__.e(/*! import() | components/thorui/tui-button/tui-button */ "components/thorui/tui-button/tui-button").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-button/tui-button.vue */ 111))
     },
     tuiPicker: function() {
-      return __webpack_require__.e(/*! import() | components/thorui/tui-picker/tui-picker */ "components/thorui/tui-picker/tui-picker").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-picker/tui-picker.vue */ 134))
+      return __webpack_require__.e(/*! import() | components/thorui/tui-picker/tui-picker */ "components/thorui/tui-picker/tui-picker").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-picker/tui-picker.vue */ 132))
     },
     tuiListView: function() {
-      return __webpack_require__.e(/*! import() | components/thorui/tui-list-view/tui-list-view */ "components/thorui/tui-list-view/tui-list-view").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-list-view/tui-list-view.vue */ 141))
+      return __webpack_require__.e(/*! import() | components/thorui/tui-list-view/tui-list-view */ "components/thorui/tui-list-view/tui-list-view").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-list-view/tui-list-view.vue */ 139))
     },
     tuiGallery: function() {
-      return __webpack_require__.e(/*! import() | components/thorui/tui-gallery/tui-gallery */ "components/thorui/tui-gallery/tui-gallery").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-gallery/tui-gallery.vue */ 148))
+      return __webpack_require__.e(/*! import() | components/thorui/tui-gallery/tui-gallery */ "components/thorui/tui-gallery/tui-gallery").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-gallery/tui-gallery.vue */ 146))
     }
   }
 } catch (e) {
@@ -251,7 +251,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
-var _travel_query = __webpack_require__(/*! @/api/travel_query.js */ 49);var tuiPicker = function tuiPicker() {__webpack_require__.e(/*! require.ensure | components/thorui/tui-picker/tui-picker */ "components/thorui/tui-picker/tui-picker").then((function () {return resolve(__webpack_require__(/*! @/components/thorui/tui-picker/tui-picker */ 134));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var tuiButton = function tuiButton() {__webpack_require__.e(/*! require.ensure | components/thorui/tui-button/tui-button */ "components/thorui/tui-button/tui-button").then((function () {return resolve(__webpack_require__(/*! @/components/thorui/tui-button/tui-button */ 113));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var tuiGallery = function tuiGallery() {__webpack_require__.e(/*! require.ensure | components/thorui/tui-gallery/tui-gallery */ "components/thorui/tui-gallery/tui-gallery").then((function () {return resolve(__webpack_require__(/*! @/components/thorui/tui-gallery/tui-gallery */ 148));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+var _travel_query = __webpack_require__(/*! @/api/travel_query.js */ 49);var tuiPicker = function tuiPicker() {__webpack_require__.e(/*! require.ensure | components/thorui/tui-picker/tui-picker */ "components/thorui/tui-picker/tui-picker").then((function () {return resolve(__webpack_require__(/*! @/components/thorui/tui-picker/tui-picker */ 132));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var tuiButton = function tuiButton() {__webpack_require__.e(/*! require.ensure | components/thorui/tui-button/tui-button */ "components/thorui/tui-button/tui-button").then((function () {return resolve(__webpack_require__(/*! @/components/thorui/tui-button/tui-button */ 111));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var tuiGallery = function tuiGallery() {__webpack_require__.e(/*! require.ensure | components/thorui/tui-gallery/tui-gallery */ "components/thorui/tui-gallery/tui-gallery").then((function () {return resolve(__webpack_require__(/*! @/components/thorui/tui-gallery/tui-gallery */ 146));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 {
   components: {

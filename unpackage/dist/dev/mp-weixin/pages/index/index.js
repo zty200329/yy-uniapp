@@ -93,8 +93,17 @@ __webpack_require__.r(__webpack_exports__);
 var components
 try {
   components = {
+    tuiNoticeBar: function() {
+      return __webpack_require__.e(/*! import() | components/thorui/tui-notice-bar/tui-notice-bar */ "components/thorui/tui-notice-bar/tui-notice-bar").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-notice-bar/tui-notice-bar.vue */ 224))
+    },
+    tuiIcon: function() {
+      return Promise.all(/*! import() | components/thorui/tui-icon/tui-icon */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/thorui/tui-icon/tui-icon")]).then(__webpack_require__.bind(null, /*! @/components/thorui/tui-icon/tui-icon.vue */ 232))
+    },
     tuiGridItem: function() {
-      return __webpack_require__.e(/*! import() | components/thorui/tui-grid-item/tui-grid-item */ "components/thorui/tui-grid-item/tui-grid-item").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-grid-item/tui-grid-item.vue */ 65))
+      return __webpack_require__.e(/*! import() | components/thorui/tui-grid-item/tui-grid-item */ "components/thorui/tui-grid-item/tui-grid-item").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-grid-item/tui-grid-item.vue */ 63))
+    },
+    tuiButton: function() {
+      return __webpack_require__.e(/*! import() | components/thorui/tui-button/tui-button */ "components/thorui/tui-button/tui-button").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-button/tui-button.vue */ 111))
     }
   }
 } catch (e) {
@@ -151,7 +160,17 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var tuiGridItem = function tuiGridItem() {__webpack_require__.e(/*! require.ensure | components/thorui/tui-grid-item/tui-grid-item */ "components/thorui/tui-grid-item/tui-grid-item").then((function () {return resolve(__webpack_require__(/*! @/components/thorui/tui-grid-item/tui-grid-item */ 65));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var tuiGridItem = function tuiGridItem() {__webpack_require__.e(/*! require.ensure | components/thorui/tui-grid-item/tui-grid-item */ "components/thorui/tui-grid-item/tui-grid-item").then((function () {return resolve(__webpack_require__(/*! @/components/thorui/tui-grid-item/tui-grid-item */ 63));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var TuiNoticeBar = function TuiNoticeBar() {__webpack_require__.e(/*! require.ensure | components/thorui/tui-notice-bar/tui-notice-bar */ "components/thorui/tui-notice-bar/tui-notice-bar").then((function () {return resolve(__webpack_require__(/*! ../../components/thorui/tui-notice-bar/tui-notice-bar */ 224));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var TuiIcon = function TuiIcon() {Promise.all(/*! require.ensure | components/thorui/tui-icon/tui-icon */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/thorui/tui-icon/tui-icon")]).then((function () {return resolve(__webpack_require__(/*! ../../components/thorui/tui-icon/tui-icon */ 237));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var TuiButton = function TuiButton() {__webpack_require__.e(/*! require.ensure | components/thorui/tui-button/tui-button */ "components/thorui/tui-button/tui-button").then((function () {return resolve(__webpack_require__(/*! ../../components/thorui/tui-button/tui-button */ 111));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -175,15 +194,23 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 {
   data: function data() {
-    return {};
+    return {
+      content: '扬扬是我宝贝！！' };
+
   },
   components: {
+    TuiButton: TuiButton,
+    TuiIcon: TuiIcon,
+    TuiNoticeBar: TuiNoticeBar,
     tuiGridItem: tuiGridItem },
 
   onLoad: function onLoad() {
 
   },
-  methods: {} };exports.default = _default;
+  methods: {
+    test: function test() {
+
+    } } };exports.default = _default;
 
 /***/ })
 

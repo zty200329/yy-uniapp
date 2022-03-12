@@ -4471,449 +4471,7 @@ function updateUserInfo(params) {
 
 /***/ }),
 
-/***/ 19:
-/*!*******************************************************!*\
-  !*** /Users/zty/Documents/uniapp/yy/utils/request.js ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _store = _interopRequireDefault(__webpack_require__(/*! ../store */ 12));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-var BASE_URL = 'http://127.0.0.1:8083/api';
-// const BASE_URL = 'http://zyyzty.mynatapp.cc/api';
-function request(_ref) {var url = _ref.url,method = _ref.method,data = _ref.data;
-  return new Promise(function (resolve, reject) {
-    uni.request({
-      url: BASE_URL + url,
-      data: data,
-      method: method,
-      header: {
-        Authorization: _store.default.state.user.token },
-
-      success: function success(_ref2) {var data = _ref2.data;
-        if (data.code === 0) {
-          resolve(data.data);
-        } else {
-          uni.showToast({
-            title: data.msg,
-            icon: 'none',
-            mask: true,
-            duration: 5000 });
-
-          reject(data.msg);
-        }
-      },
-      fail: function fail(error) {
-        reject(error);
-      },
-      complete: function complete() {
-        // 关闭加载
-        uni.hideLoading();
-      } });
-
-  });
-}var _default =
-
-request;exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
-
-/***/ }),
-
-/***/ 2:
-/*!***********************************!*\
-  !*** (webpack)/buildin/global.js ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-var g;
-
-// This works in non-strict mode
-g = (function() {
-	return this;
-})();
-
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || new Function("return this")();
-} catch (e) {
-	// This works if the window reference is available
-	if (typeof window === "object") g = window;
-}
-
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
-
-module.exports = g;
-
-
-/***/ }),
-
-/***/ 20:
-/*!************************************************************!*\
-  !*** /Users/zty/Documents/uniapp/yy/common/httpRequest.js ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 15));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};} /**
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     * 常用方法封装 请求，文件上传等
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     * @author echo.
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     **/
-var tui = {
-  //接口地址
-  interfaceUrl: function interfaceUrl() {
-    return 'https://www.thorui.cn';
-    //return 'https://test.thorui.cn'
-    //return 'https://uat.thorui.cn'
-    // return 'https://prod.thorui.cn'
-  },
-  toast: function toast(text, duration, success) {
-    uni.showToast({
-      title: text || "出错啦~",
-      icon: success ? 'success' : 'none',
-      duration: duration || 2000 });
-
-  },
-  modal: function modal(title, content, showCancel, callback, confirmColor, confirmText) {
-    uni.showModal({
-      title: title || '提示',
-      content: content,
-      showCancel: showCancel,
-      cancelColor: "#555",
-      confirmColor: confirmColor || "#5677fc",
-      confirmText: confirmText || "确定",
-      success: function success(res) {
-        if (res.confirm) {
-          callback && callback(true);
-        } else {
-          callback && callback(false);
-        }
-      } });
-
-  },
-  isAndroid: function isAndroid() {
-    var res = uni.getSystemInfoSync();
-    return res.platform.toLocaleLowerCase() == "android";
-  },
-  isPhoneX: function isPhoneX() {
-    var res = uni.getSystemInfoSync();
-    var iphonex = false;
-    var models = ['iphonex', 'iphonexr', 'iphonexsmax', 'iphone11', 'iphone11pro', 'iphone11promax'];
-    var model = res.model.replace(/\s/g, "").toLowerCase();
-    if (models.includes(model)) {
-      iphonex = true;
-    }
-    return iphonex;
-  },
-  constNum: function constNum() {
-    var time = 0;
-
-
-
-    return time;
-  },
-  delayed: null,
-  showLoading: function showLoading(title) {var mask = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
-    uni.showLoading({
-      mask: mask,
-      title: title || '请稍候...' });
-
-  },
-  /**
-      * 请求数据处理
-      * @param string url 请求地址
-      * @param string method 请求方式
-      *  GET or POST
-      * @param {*} postData 请求参数
-      * @param bool isDelay 是否延迟显示loading
-      * @param bool isForm 数据格式
-      *  true: 'application/x-www-form-urlencoded'
-      *  false:'application/json'
-      * @param bool hideLoading 是否隐藏loading
-      *  true: 隐藏
-      *  false:显示
-      */
-  request: function () {var _request = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee(url, method, postData, isDelay, isForm, hideLoading) {var loadding;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:
-              //接口请求
-              loadding = false;
-              tui.delayed && uni.hideLoading();
-              clearTimeout(tui.delayed);
-              tui.delayed = null;
-              if (!hideLoading) {
-                if (isDelay) {
-                  tui.delayed = setTimeout(function () {
-                    loadding = true;
-                    tui.showLoading();
-                  }, 1000);
-                } else {
-                  loadding = true;
-                  tui.showLoading();
-                }
-              }return _context.abrupt("return",
-
-              new Promise(function (resolve, reject) {
-                uni.request({
-                  url: tui.interfaceUrl() + url,
-                  data: postData,
-                  header: {
-                    'content-type': isForm ? 'application/x-www-form-urlencoded' : 'application/json',
-                    'Authorization': tui.getToken() },
-
-                  method: method, //'GET','POST'
-                  dataType: 'json',
-                  success: function success(res) {
-                    clearTimeout(tui.delayed);
-                    tui.delayed = null;
-                    if (loadding && !hideLoading) {
-                      uni.hideLoading();
-                    }
-                    resolve(res.data);
-                  },
-                  fail: function fail(res) {
-                    clearTimeout(tui.delayed);
-                    tui.delayed = null;
-                    tui.toast("网络不给力，请稍后再试~");
-                    reject(res);
-                  } });
-
-              }));case 6:case "end":return _context.stop();}}}, _callee);}));function request(_x, _x2, _x3, _x4, _x5, _x6) {return _request.apply(this, arguments);}return request;}(),
-
-  /**
-                                                                                                                                                                                         * 上传文件
-                                                                                                                                                                                         * @param string url 请求地址
-                                                                                                                                                                                         * @param string src 文件路径
-                                                                                                                                                                                         */
-  uploadFile: function uploadFile(url, src) {
-    tui.showLoading();
-    return new Promise(function (resolve, reject) {
-      var uploadTask = uni.uploadFile({
-        url: tui.interfaceUrl() + url,
-        filePath: src,
-        name: 'imageFile',
-        header: {
-          'Authorization': tui.getToken() },
-
-        formData: {
-          // sizeArrayText:""
-        },
-        success: function success(res) {
-          uni.hideLoading();
-          var d = JSON.parse(res.data.replace(/\ufeff/g, "") || "{}");
-          if (d.code % 100 == 0) {
-            //返回图片地址
-            var fileObj = d.data;
-            resolve(fileObj);
-          } else {
-            that.toast(res.msg);
-          }
-        },
-        fail: function fail(res) {
-          reject(res);
-          that.toast(res.msg);
-        } });
-
-    });
-  },
-  tuiJsonp: function tuiJsonp(url, callback, callbackname) {
-
-
-
-
-
-
-
-
-  },
-  //设置用户信息
-  setUserInfo: function setUserInfo(mobile, token) {
-    //uni.setStorageSync("thorui_token", token)
-    uni.setStorageSync("thorui_mobile", mobile);
-  },
-  //获取token
-  getToken: function getToken() {
-    return uni.getStorageSync("thorui_token");
-  },
-  //判断是否登录
-  isLogin: function isLogin() {
-    return uni.getStorageSync("thorui_mobile") ? true : false;
-  },
-  //跳转页面，校验登录状态
-  href: function href(url, isVerify) {
-    if (isVerify && !tui.isLogin()) {
-      uni.navigateTo({
-        url: '/pages/common/login/login' });
-
-    } else {
-      uni.navigateTo({
-        url: url });
-
-    }
-  } };var _default =
-
-
-tui;exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
-
-/***/ }),
-
-/***/ 21:
-/*!*****************************************************************************!*\
-  !*** /Users/zty/Documents/uniapp/yy/components/common/tui-request/index.js ***!
-  \*****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
-
-
-
-
-
-
-var _tuiBase = _interopRequireDefault(__webpack_require__(/*! ./tui-base.js */ 22));
-var _tuiTaskKeyStore = _interopRequireDefault(__webpack_require__(/*! ./tui-taskKeyStore.js */ 23));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}
-
-var store = (0, _tuiTaskKeyStore.default)();var
-
-THORUI_INNER = /*#__PURE__*/function () {
-  function THORUI_INNER() {var initConfig = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};_classCallCheck(this, THORUI_INNER);
-    this.initConfig = initConfig;
-    this.request = [];
-    this.response = [];
-    this.dispatchRequest = this.dispatchRequest.bind(this);
-  }_createClass(THORUI_INNER, [{ key: "dispatchRequest", value: function dispatchRequest()
-    {var config = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-      var params = _tuiBase.default.mergeConfig(this.initConfig, config);
-      if (params.requestTaskKey && store.requestTaskStorage(params.requestTaskKey)) {
-        return new Promise(function (resolve, reject) {
-          reject({
-            statusCode: -9999,
-            errMsg: 'request:cancelled' });
-
-        });
-      }
-      var options = _tuiBase.default.getOptions(params);
-      var promise = Promise.resolve(options);
-      promise = promise.then(function (config) {
-        if (params.showLoading) {
-          _tuiBase.default.showLoading();
-        }
-        return new Promise(function (resolve, reject) {
-          var requestTask = uni.request(_objectSpread(_objectSpread({},
-          options), {}, {
-            success: function success(res) {
-              if (params.showLoading) {
-                uni.hideLoading();
-              }
-              resolve(params.concise ? res.data : res);
-            },
-            fail: function fail(err) {
-              if (params.errMsg) {
-                _tuiBase.default.toast(params.errorMsg);
-              }
-              reject(err);
-            },
-            complete: function complete() {
-              store.removeRequestTaskKey(params.requestTaskKey);
-            } }));
-
-
-          if (params.timeout && typeof params.timeout === 'number' && params.timeout > 3000) {
-            setTimeout(function () {
-              try {
-                store.removeRequestTaskKey(params.requestTaskKey);
-                requestTask.abort();
-              } catch (e) {}
-              resolve({
-                statusCode: -9999,
-                errMsg: 'request:cancelled' });
-
-            }, params.timeout);
-          }
-        });
-      });
-      return promise;
-    } }]);return THORUI_INNER;}();
-
-
-
-var inner = new THORUI_INNER(_tuiBase.default.config());
-
-var http = {
-  interceptors: {
-    request: {
-      use: function use(fulfilled, rejected) {
-        inner.request.push({
-          fulfilled: fulfilled,
-          rejected: rejected });
-
-      },
-      eject: function eject(name) {
-        if (inner.request[name]) {
-          inner.request[name] = null;
-        }
-      } },
-
-    response: {
-      use: function use(fulfilled, rejected) {
-        inner.response.push({
-          fulfilled: fulfilled,
-          rejected: rejected });
-
-      },
-      eject: function eject(name) {
-        if (inner.response[name]) {
-          inner.response[name] = null;
-        }
-      } } },
-
-
-  create: function create(config) {
-    inner.initConfig = _tuiBase.default.mergeConfig(_tuiBase.default.config(), config, true);
-  },
-  get: function get(url) {var config = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-    config.method = 'GET';
-    config.url = url;
-    return http.request(config);
-  },
-  post: function post(url) {var config = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-    config.method = 'POST';
-    config.url = url;
-    return http.request(config);
-  },
-  all: function all(requests) {
-    return Promise.all(requests);
-  },
-  request: function request() {var config = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-    var chain = [inner.dispatchRequest, undefined];
-    var promise = Promise.resolve(config);
-
-    inner.request.forEach(function (interceptor) {
-      chain.unshift(interceptor.fulfilled, interceptor.rejected);
-    });
-
-    inner.response.forEach(function (interceptor) {
-      chain.push(interceptor.fulfilled, interceptor.rejected);
-    });
-
-    while (chain.length) {
-      promise = promise.then(chain.shift(), chain.shift());
-    }
-
-    return promise;
-  } };var _default =
-
-http;exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
-
-/***/ }),
-
-/***/ 210:
+/***/ 186:
 /*!**********************************************************************!*\
   !*** /Users/zty/Documents/uniapp/yy/components/tki-qrcode/qrcode.js ***!
   \**********************************************************************/
@@ -6126,6 +5684,450 @@ QRCode;exports.default = _default;
 
 /***/ }),
 
+/***/ 19:
+/*!*******************************************************!*\
+  !*** /Users/zty/Documents/uniapp/yy/utils/request.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _store = _interopRequireDefault(__webpack_require__(/*! ../store */ 12));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+// const BASE_URL = 'http://127.0.0.1:8083/api';
+// const BASE_URL = 'http://zyyzty.mynatapp.cc/api';
+var BASE_URL = 'http://192.168.1.110:8083/api';
+function request(_ref) {var url = _ref.url,method = _ref.method,data = _ref.data;
+  return new Promise(function (resolve, reject) {
+    uni.request({
+      url: BASE_URL + url,
+      data: data,
+      method: method,
+      header: {
+        Authorization: _store.default.state.user.token },
+
+      success: function success(_ref2) {var data = _ref2.data;
+        if (data.code === 0) {
+          resolve(data.data);
+        } else {
+          uni.showToast({
+            title: data.msg,
+            icon: 'none',
+            mask: true,
+            duration: 5000 });
+
+          reject(data.msg);
+        }
+      },
+      fail: function fail(error) {
+        reject(error);
+
+      },
+      complete: function complete() {
+        // 关闭加载
+        uni.hideLoading();
+      } });
+
+  });
+}var _default =
+
+request;exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+
+/***/ 2:
+/*!***********************************!*\
+  !*** (webpack)/buildin/global.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || new Function("return this")();
+} catch (e) {
+	// This works if the window reference is available
+	if (typeof window === "object") g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ }),
+
+/***/ 20:
+/*!************************************************************!*\
+  !*** /Users/zty/Documents/uniapp/yy/common/httpRequest.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 15));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};} /**
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     * 常用方法封装 请求，文件上传等
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     * @author echo.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     **/
+var tui = {
+  //接口地址
+  interfaceUrl: function interfaceUrl() {
+    return 'https://www.thorui.cn';
+    //return 'https://test.thorui.cn'
+    //return 'https://uat.thorui.cn'
+    // return 'https://prod.thorui.cn'
+  },
+  toast: function toast(text, duration, success) {
+    uni.showToast({
+      title: text || "出错啦~",
+      icon: success ? 'success' : 'none',
+      duration: duration || 2000 });
+
+  },
+  modal: function modal(title, content, showCancel, callback, confirmColor, confirmText) {
+    uni.showModal({
+      title: title || '提示',
+      content: content,
+      showCancel: showCancel,
+      cancelColor: "#555",
+      confirmColor: confirmColor || "#5677fc",
+      confirmText: confirmText || "确定",
+      success: function success(res) {
+        if (res.confirm) {
+          callback && callback(true);
+        } else {
+          callback && callback(false);
+        }
+      } });
+
+  },
+  isAndroid: function isAndroid() {
+    var res = uni.getSystemInfoSync();
+    return res.platform.toLocaleLowerCase() == "android";
+  },
+  isPhoneX: function isPhoneX() {
+    var res = uni.getSystemInfoSync();
+    var iphonex = false;
+    var models = ['iphonex', 'iphonexr', 'iphonexsmax', 'iphone11', 'iphone11pro', 'iphone11promax'];
+    var model = res.model.replace(/\s/g, "").toLowerCase();
+    if (models.includes(model)) {
+      iphonex = true;
+    }
+    return iphonex;
+  },
+  constNum: function constNum() {
+    var time = 0;
+
+
+
+    return time;
+  },
+  delayed: null,
+  showLoading: function showLoading(title) {var mask = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
+    uni.showLoading({
+      mask: mask,
+      title: title || '请稍候...' });
+
+  },
+  /**
+      * 请求数据处理
+      * @param string url 请求地址
+      * @param string method 请求方式
+      *  GET or POST
+      * @param {*} postData 请求参数
+      * @param bool isDelay 是否延迟显示loading
+      * @param bool isForm 数据格式
+      *  true: 'application/x-www-form-urlencoded'
+      *  false:'application/json'
+      * @param bool hideLoading 是否隐藏loading
+      *  true: 隐藏
+      *  false:显示
+      */
+  request: function () {var _request = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee(url, method, postData, isDelay, isForm, hideLoading) {var loadding;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:
+              //接口请求
+              loadding = false;
+              tui.delayed && uni.hideLoading();
+              clearTimeout(tui.delayed);
+              tui.delayed = null;
+              if (!hideLoading) {
+                if (isDelay) {
+                  tui.delayed = setTimeout(function () {
+                    loadding = true;
+                    tui.showLoading();
+                  }, 1000);
+                } else {
+                  loadding = true;
+                  tui.showLoading();
+                }
+              }return _context.abrupt("return",
+
+              new Promise(function (resolve, reject) {
+                uni.request({
+                  url: tui.interfaceUrl() + url,
+                  data: postData,
+                  header: {
+                    'content-type': isForm ? 'application/x-www-form-urlencoded' : 'application/json',
+                    'Authorization': tui.getToken() },
+
+                  method: method, //'GET','POST'
+                  dataType: 'json',
+                  success: function success(res) {
+                    clearTimeout(tui.delayed);
+                    tui.delayed = null;
+                    if (loadding && !hideLoading) {
+                      uni.hideLoading();
+                    }
+                    resolve(res.data);
+                  },
+                  fail: function fail(res) {
+                    clearTimeout(tui.delayed);
+                    tui.delayed = null;
+                    tui.toast("网络不给力，请稍后再试~");
+                    reject(res);
+                  } });
+
+              }));case 6:case "end":return _context.stop();}}}, _callee);}));function request(_x, _x2, _x3, _x4, _x5, _x6) {return _request.apply(this, arguments);}return request;}(),
+
+  /**
+                                                                                                                                                                                         * 上传文件
+                                                                                                                                                                                         * @param string url 请求地址
+                                                                                                                                                                                         * @param string src 文件路径
+                                                                                                                                                                                         */
+  uploadFile: function uploadFile(url, src) {
+    tui.showLoading();
+    return new Promise(function (resolve, reject) {
+      var uploadTask = uni.uploadFile({
+        url: tui.interfaceUrl() + url,
+        filePath: src,
+        name: 'imageFile',
+        header: {
+          'Authorization': tui.getToken() },
+
+        formData: {
+          // sizeArrayText:""
+        },
+        success: function success(res) {
+          uni.hideLoading();
+          var d = JSON.parse(res.data.replace(/\ufeff/g, "") || "{}");
+          if (d.code % 100 == 0) {
+            //返回图片地址
+            var fileObj = d.data;
+            resolve(fileObj);
+          } else {
+            that.toast(res.msg);
+          }
+        },
+        fail: function fail(res) {
+          reject(res);
+          that.toast(res.msg);
+        } });
+
+    });
+  },
+  tuiJsonp: function tuiJsonp(url, callback, callbackname) {
+
+
+
+
+
+
+
+
+  },
+  //设置用户信息
+  setUserInfo: function setUserInfo(mobile, token) {
+    //uni.setStorageSync("thorui_token", token)
+    uni.setStorageSync("thorui_mobile", mobile);
+  },
+  //获取token
+  getToken: function getToken() {
+    return uni.getStorageSync("thorui_token");
+  },
+  //判断是否登录
+  isLogin: function isLogin() {
+    return uni.getStorageSync("thorui_mobile") ? true : false;
+  },
+  //跳转页面，校验登录状态
+  href: function href(url, isVerify) {
+    if (isVerify && !tui.isLogin()) {
+      uni.navigateTo({
+        url: '/pages/common/login/login' });
+
+    } else {
+      uni.navigateTo({
+        url: url });
+
+    }
+  } };var _default =
+
+
+tui;exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+
+/***/ 21:
+/*!*****************************************************************************!*\
+  !*** /Users/zty/Documents/uniapp/yy/components/common/tui-request/index.js ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+
+
+
+
+
+
+var _tuiBase = _interopRequireDefault(__webpack_require__(/*! ./tui-base.js */ 22));
+var _tuiTaskKeyStore = _interopRequireDefault(__webpack_require__(/*! ./tui-taskKeyStore.js */ 23));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}
+
+var store = (0, _tuiTaskKeyStore.default)();var
+
+THORUI_INNER = /*#__PURE__*/function () {
+  function THORUI_INNER() {var initConfig = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};_classCallCheck(this, THORUI_INNER);
+    this.initConfig = initConfig;
+    this.request = [];
+    this.response = [];
+    this.dispatchRequest = this.dispatchRequest.bind(this);
+  }_createClass(THORUI_INNER, [{ key: "dispatchRequest", value: function dispatchRequest()
+    {var config = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      var params = _tuiBase.default.mergeConfig(this.initConfig, config);
+      if (params.requestTaskKey && store.requestTaskStorage(params.requestTaskKey)) {
+        return new Promise(function (resolve, reject) {
+          reject({
+            statusCode: -9999,
+            errMsg: 'request:cancelled' });
+
+        });
+      }
+      var options = _tuiBase.default.getOptions(params);
+      var promise = Promise.resolve(options);
+      promise = promise.then(function (config) {
+        if (params.showLoading) {
+          _tuiBase.default.showLoading();
+        }
+        return new Promise(function (resolve, reject) {
+          var requestTask = uni.request(_objectSpread(_objectSpread({},
+          options), {}, {
+            success: function success(res) {
+              if (params.showLoading) {
+                uni.hideLoading();
+              }
+              resolve(params.concise ? res.data : res);
+            },
+            fail: function fail(err) {
+              if (params.errMsg) {
+                _tuiBase.default.toast(params.errorMsg);
+              }
+              reject(err);
+            },
+            complete: function complete() {
+              store.removeRequestTaskKey(params.requestTaskKey);
+            } }));
+
+
+          if (params.timeout && typeof params.timeout === 'number' && params.timeout > 3000) {
+            setTimeout(function () {
+              try {
+                store.removeRequestTaskKey(params.requestTaskKey);
+                requestTask.abort();
+              } catch (e) {}
+              resolve({
+                statusCode: -9999,
+                errMsg: 'request:cancelled' });
+
+            }, params.timeout);
+          }
+        });
+      });
+      return promise;
+    } }]);return THORUI_INNER;}();
+
+
+
+var inner = new THORUI_INNER(_tuiBase.default.config());
+
+var http = {
+  interceptors: {
+    request: {
+      use: function use(fulfilled, rejected) {
+        inner.request.push({
+          fulfilled: fulfilled,
+          rejected: rejected });
+
+      },
+      eject: function eject(name) {
+        if (inner.request[name]) {
+          inner.request[name] = null;
+        }
+      } },
+
+    response: {
+      use: function use(fulfilled, rejected) {
+        inner.response.push({
+          fulfilled: fulfilled,
+          rejected: rejected });
+
+      },
+      eject: function eject(name) {
+        if (inner.response[name]) {
+          inner.response[name] = null;
+        }
+      } } },
+
+
+  create: function create(config) {
+    inner.initConfig = _tuiBase.default.mergeConfig(_tuiBase.default.config(), config, true);
+  },
+  get: function get(url) {var config = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    config.method = 'GET';
+    config.url = url;
+    return http.request(config);
+  },
+  post: function post(url) {var config = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    config.method = 'POST';
+    config.url = url;
+    return http.request(config);
+  },
+  all: function all(requests) {
+    return Promise.all(requests);
+  },
+  request: function request() {var config = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+    var chain = [inner.dispatchRequest, undefined];
+    var promise = Promise.resolve(config);
+
+    inner.request.forEach(function (interceptor) {
+      chain.unshift(interceptor.fulfilled, interceptor.rejected);
+    });
+
+    inner.response.forEach(function (interceptor) {
+      chain.push(interceptor.fulfilled, interceptor.rejected);
+    });
+
+    while (chain.length) {
+      promise = promise.then(chain.shift(), chain.shift());
+    }
+
+    return promise;
+  } };var _default =
+
+http;exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+
 /***/ 22:
 /*!********************************************************************************!*\
   !*** /Users/zty/Documents/uniapp/yy/components/common/tui-request/tui-base.js ***!
@@ -6252,6 +6254,206 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 function createTaskKeyStore() {var keys = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
   return new RequestTaskKeyStore(keys);
 }
+
+/***/ }),
+
+/***/ 237:
+/*!*****************************************************************************!*\
+  !*** /Users/zty/Documents/uniapp/yy/components/thorui/tui-icon/tui-icon.js ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  "about": "\uE772",
+  "about-fill": "\uE771",
+  "add": "\uE770",
+  "add-fill": "\uE76F",
+  "addmessage": "\uE76E",
+  "addressbook": "\uE76D",
+  "agree": "\uE76C",
+  "agree-fill": "\uE76B",
+  "alarm": "\uE76A",
+  "alarm-fill": "\uE769",
+  "alipay": "\uE768",
+  "android": "\uE767",
+  "applets": "\uE766",
+  "arrowdown": "\uE765",
+  "arrowleft": "\uE764",
+  "arrowright": "\uE763",
+  "arrowup": "\uE762",
+  "attestation": "\uE761",
+  "back": "\uE760",
+  "bag": "\uE75F",
+  "bag-fill": "\uE75E",
+  "balloon": "\uE75D",
+  "bankcard": "\uE75C",
+  "bankcard-fill": "\uE75B",
+  "bottom": "\uE75A",
+  "calendar": "\uE759",
+  "camera": "\uE758",
+  "camera-fill": "\uE757",
+  "camera-add": "\uE756",
+  "card": "\uE755",
+  "card-fill": "\uE754",
+  "cart": "\uE753",
+  "cart-fill": "\uE752",
+  "category": "\uE751",
+  "category-fill": "\uE750",
+  "check": "\uE74F",
+  "circle": "\uE74E",
+  "circle-fill": "\uE74D",
+  "circle-selected": "\uE74C",
+  "clock": "\uE74B",
+  "clock-fill": "\uE74A",
+  "close": "\uE749",
+  "close-fill": "\uE748",
+  "community": "\uE747",
+  "community-fill": "\uE746",
+  "computer": "\uE745",
+  "computer-fill": "\uE744",
+  "coupon": "\uE743",
+  "delete": "\uE742",
+  "deletekey": "\uE741",
+  "dingtalk": "\uE740",
+  "dissatisfied": "\uE73F",
+  "down": "\uE73E",
+  "download": "\uE73D",
+  "edit": "\uE73C",
+  "ellipsis": "\uE73B",
+  "enlarge": "\uE73A",
+  "evaluate": "\uE739",
+  "exchange": "\uE738",
+  "explain": "\uE737",
+  "explain-fill": "\uE736",
+  "explore": "\uE735",
+  "explore-fill": "\uE734",
+  "eye": "\uE733",
+  "feedback": "\uE732",
+  "fingerprint": "\uE730",
+  "friendadd": "\uE72F",
+  "friendadd-fill": "\uE72E",
+  "gps": "\uE72D",
+  "histogram": "\uE72C",
+  "home": "\uE72B",
+  "home-fill": "\uE72A",
+  "house": "\uE729",
+  "imface": "\uE728",
+  "imkeyboard": "\uE727",
+  "immore": "\uE726",
+  "imvoice": "\uE725",
+  "ios": "\uE724",
+  "kefu": "\uE723",
+  "label": "\uE722",
+  "label-fill": "\uE721",
+  "like": "\uE720",
+  "like-fill": "\uE71F",
+  "link": "\uE71E",
+  "listview": "\uE71D",
+  "loading": "\uE71C",
+  "location": "\uE71B",
+  "mail": "\uE71A",
+  "mail-fill": "\uE719",
+  "manage": "\uE718",
+  "manage-fill": "\uE717",
+  "member": "\uE716",
+  "member-fill": "\uE715",
+  "message": "\uE714",
+  "message-fill": "\uE713",
+  "mobile": "\uE712",
+  "moments": "\uE711",
+  "more": "\uE710",
+  "more-fill": "\uE70F",
+  "narrow": "\uE70E",
+  "news": "\uE70D",
+  "news-fill": "\uE70C",
+  "nodata": "\uE70B",
+  "notice": "\uE699",
+  "notice-fill": "\uE698",
+  "offline": "\uE697",
+  "offline-fill": "\uE696",
+  "oppose": "\uE695",
+  "oppose-fill": "\uE694",
+  "order": "\uE693",
+  "partake": "\uE692",
+  "people": "\uE691",
+  "people-fill": "\uE690",
+  "pic": "\uE68F",
+  "pic-fill": "\uE68E",
+  "picture": "\uE68D",
+  "pie": "\uE68C",
+  "plus": "\uE689",
+  "polygonal": "\uE688",
+  "position": "\uE686",
+  "pwd": "\uE685",
+  "qq": "\uE684",
+  "qrcode": "\uE682",
+  "redpacket": "\uE681",
+  "redpacket-fill": "\uE680",
+  "reduce": "\uE67F",
+  "refresh": "\uE67E",
+  "revoke": "\uE67D",
+  "satisfied": "\uE67C",
+  "screen": "\uE67B",
+  "search": "\uE67A",
+  "search-2": "\uE679",
+  "send": "\uE678",
+  "service": "\uE677",
+  "service-fill": "\uE676",
+  "setup": "\uE675",
+  "setup-fill": "\uE674",
+  "share": "\uE673",
+  "share-fill": "\uE672",
+  "shield": "\uE671",
+  "shop": "\uE670",
+  "shop-fill": "\uE66F",
+  "shut": "\uE66E",
+  "signin": "\uE66D",
+  "sina": "\uE66C",
+  "skin": "\uE66B",
+  "soso": "\uE669",
+  "square": "\uE668",
+  "square-fill": "\uE667",
+  "square-selected": "\uE666",
+  "star": "\uE665",
+  "star-fill": "\uE664",
+  "strategy": "\uE663",
+  "sweep": "\uE662",
+  "time": "\uE661",
+  "time-fill": "\uE660",
+  "todown": "\uE65F",
+  "toleft": "\uE65E",
+  "tool": "\uE65D",
+  "top": "\uE65C",
+  "toright": "\uE65B",
+  "towardsleft": "\uE65A",
+  "towardsright": "\uE659",
+  "towardsright-fill": "\uE658",
+  "transport": "\uE657",
+  "transport-fill": "\uE656",
+  "turningdown": "\uE654",
+  "turningleft": "\uE653",
+  "turningright": "\uE652",
+  "turningup": "\uE651",
+  "unreceive": "\uE650",
+  "seen": "\uE7D2",
+  "unseen": "\uE7D1",
+  "up": "\uE64E",
+  "upload": "\uE64C",
+  "video": "\uE64B",
+  "voice": "\uE649",
+  "voice-fill": "\uE648",
+  "voipphone": "\uE647",
+  "wallet": "\uE646",
+  "warning": "\uE645",
+  "wealth": "\uE644",
+  "wealth-fill": "\uE643",
+  "weather": "\uE642",
+  "wechat": "\uE641",
+  "wifi": "\uE640",
+  "play": "\uE7D5",
+  "suspend": "\uE7D4" };exports.default = _default;
 
 /***/ }),
 
@@ -13161,7 +13363,7 @@ function travelQuery(params) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.submitTravelApplication = submitTravelApplication;exports.getTravelApply = getTravelApply;var _request = _interopRequireDefault(__webpack_require__(/*! ../utils/request */ 19));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+Object.defineProperty(exports, "__esModule", { value: true });exports.submitTravelApplication = submitTravelApplication;exports.getTravelApply = getTravelApply;exports.getTravelApplyInfoById = getTravelApplyInfoById;exports.updateTravelApplyStatus = updateTravelApplyStatus;exports.sendMessageToUser = sendMessageToUser;var _request = _interopRequireDefault(__webpack_require__(/*! ../utils/request */ 19));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 function submitTravelApplication(params) {
   return (0, _request.default)({
@@ -13178,9 +13380,33 @@ function getTravelApply() {
 
 }
 
+function getTravelApplyInfoById(params) {
+  return (0, _request.default)({
+    url: '/travel/getTravelApplyInfoById',
+    method: 'GET',
+    data: params });
+
+}
+
+function updateTravelApplyStatus(params) {
+  return (0, _request.default)({
+    url: '/travel/updateTravelApplyStatus',
+    method: 'POST',
+    data: params });
+
+}
+
+function sendMessageToUser(params) {
+  return (0, _request.default)({
+    url: '/travel/sendMessageToUser',
+    method: 'POST',
+    data: params });
+
+}
+
 /***/ }),
 
-/***/ 84:
+/***/ 82:
 /*!***********************************************************************************!*\
   !*** /Users/zty/Documents/uniapp/yy/components/thorui/tui-form/tui-validation.js ***!
   \***********************************************************************************/

@@ -94,7 +94,7 @@ var components
 try {
   components = {
     myLogin: function() {
-      return Promise.all(/*! import() | components/my-login/my-login */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/my-login/my-login")]).then(__webpack_require__.bind(null, /*! @/components/my-login/my-login.vue */ 72))
+      return Promise.all(/*! import() | components/my-login/my-login */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/my-login/my-login")]).then(__webpack_require__.bind(null, /*! @/components/my-login/my-login.vue */ 70))
     }
   }
 } catch (e) {

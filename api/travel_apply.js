@@ -14,3 +14,28 @@ export function getTravelApply(){
         method: 'GET'
     })
 }
+
+export function getTravelApplyInfoById(params){
+    return request({
+        url: '/travel/getTravelApplyInfoById',
+        method: 'GET',
+        data: params
+    })
+}
+
+export function updateTravelApplyStatus(params) {
+    return request({
+        url: '/travel/updateTravelApplyStatus',
+        method: 'POST',
+        data: params
+    })
+}
+
+export function sendMessageToUser(params) {
+    return request({
+        url: '/travel/sendMessageToUser',
+        method: 'POST',
+        data: params
+    })
+}
+

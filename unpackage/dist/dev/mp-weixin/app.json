@@ -1,36 +1,37 @@
 {
-    "pages": [
-        "pages/index/index",
-        "pages/my/my",
-        "pages/user_information/user_information",
-        "pages/travel_query/travel_query",
-        "pages/travel_apply/travel_apply",
-        "pages/travel_list/travel_list"
-    ],
-    "subPackages": [],
-    "window": {
-        "navigationBarTextStyle": "black",
-        "navigationBarTitleText": "Thor UI",
-        "navigationBarBackgroundColor": "#F8F8F8",
-        "backgroundColor": "#F8F8F8"
-    },
-    "tabBar": {
-        "selectedColor": "#f94d2a",
-        "list": [
-            {
-                "pagePath": "pages/index/index",
-                "text": "首页",
-                "iconPath": "static/tab-icons/base.png",
-                "selectedIconPath": "static/tab-icons/base-1.png"
-            },
-            {
-                "pagePath": "pages/my/my",
-                "text": "我的",
-                "iconPath": "static/tab-icons/my.png",
-                "selectedIconPath": "static/tab-icons/my-1.png"
-            }
-        ]
-    },
-    "usingComponents": {},
-    "sitemapLocation": "sitemap.json"
+  "pages": [
+    "pages/index/index",
+    "pages/my/my",
+    "pages/user_information/user_information",
+    "pages/travel_query/travel_query",
+    "pages/travel_apply/travel_apply",
+    "pages/travel_list/travel_list",
+    "pages/out_register/out_register",
+    "pages/send_message/send_message"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Thor UI",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "selectedColor": "#f94d2a",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/tab-icons/base.png",
+        "selectedIconPath": "static/tab-icons/base-1.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "static/tab-icons/my.png",
+        "selectedIconPath": "static/tab-icons/my-1.png"
+      }
+    ]
+  },
+  "usingComponents": {}
 }

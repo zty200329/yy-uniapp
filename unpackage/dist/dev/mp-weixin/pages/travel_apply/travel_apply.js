@@ -94,37 +94,34 @@ var components
 try {
   components = {
     tuiInput: function() {
-      return __webpack_require__.e(/*! import() | components/thorui/tui-input/tui-input */ "components/thorui/tui-input/tui-input").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-input/tui-input.vue */ 87))
+      return __webpack_require__.e(/*! import() | components/thorui/tui-input/tui-input */ "components/thorui/tui-input/tui-input").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-input/tui-input.vue */ 85))
     },
     tuiSwitch: function() {
-      return __webpack_require__.e(/*! import() | components/thorui/tui-switch/tui-switch */ "components/thorui/tui-switch/tui-switch").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-switch/tui-switch.vue */ 155))
+      return __webpack_require__.e(/*! import() | components/thorui/tui-switch/tui-switch */ "components/thorui/tui-switch/tui-switch").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-switch/tui-switch.vue */ 153))
     },
     tuiTextarea: function() {
-      return __webpack_require__.e(/*! import() | components/thorui/tui-textarea/tui-textarea */ "components/thorui/tui-textarea/tui-textarea").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-textarea/tui-textarea.vue */ 162))
+      return __webpack_require__.e(/*! import() | components/thorui/tui-textarea/tui-textarea */ "components/thorui/tui-textarea/tui-textarea").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-textarea/tui-textarea.vue */ 160))
     },
     tuiUpload: function() {
-      return __webpack_require__.e(/*! import() | components/thorui/tui-upload/tui-upload */ "components/thorui/tui-upload/tui-upload").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-upload/tui-upload.vue */ 169))
+      return __webpack_require__.e(/*! import() | components/thorui/tui-upload/tui-upload */ "components/thorui/tui-upload/tui-upload").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-upload/tui-upload.vue */ 167))
     },
     tuiButton: function() {
-      return __webpack_require__.e(/*! import() | components/thorui/tui-button/tui-button */ "components/thorui/tui-button/tui-button").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-button/tui-button.vue */ 113))
+      return __webpack_require__.e(/*! import() | components/thorui/tui-button/tui-button */ "components/thorui/tui-button/tui-button").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-button/tui-button.vue */ 111))
     },
     tuiDatetime: function() {
-      return __webpack_require__.e(/*! import() | components/thorui/tui-datetime/tui-datetime */ "components/thorui/tui-datetime/tui-datetime").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-datetime/tui-datetime.vue */ 127))
+      return __webpack_require__.e(/*! import() | components/thorui/tui-datetime/tui-datetime */ "components/thorui/tui-datetime/tui-datetime").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-datetime/tui-datetime.vue */ 125))
     },
     tuiRadioGroup: function() {
-      return __webpack_require__.e(/*! import() | components/thorui/tui-radio-group/tui-radio-group */ "components/thorui/tui-radio-group/tui-radio-group").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-radio-group/tui-radio-group.vue */ 94))
+      return __webpack_require__.e(/*! import() | components/thorui/tui-radio-group/tui-radio-group */ "components/thorui/tui-radio-group/tui-radio-group").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-radio-group/tui-radio-group.vue */ 92))
     },
     tuiLabel: function() {
-      return __webpack_require__.e(/*! import() | components/thorui/tui-label/tui-label */ "components/thorui/tui-label/tui-label").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-label/tui-label.vue */ 99))
+      return __webpack_require__.e(/*! import() | components/thorui/tui-label/tui-label */ "components/thorui/tui-label/tui-label").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-label/tui-label.vue */ 97))
     },
     tuiRadio: function() {
-      return __webpack_require__.e(/*! import() | components/thorui/tui-radio/tui-radio */ "components/thorui/tui-radio/tui-radio").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-radio/tui-radio.vue */ 106))
-    },
-    tuiFormButton: function() {
-      return __webpack_require__.e(/*! import() | components/thorui/tui-form-button/tui-form-button */ "components/thorui/tui-form-button/tui-form-button").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-form-button/tui-form-button.vue */ 176))
+      return __webpack_require__.e(/*! import() | components/thorui/tui-radio/tui-radio */ "components/thorui/tui-radio/tui-radio").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-radio/tui-radio.vue */ 104))
     },
     tuiToast: function() {
-      return __webpack_require__.e(/*! import() | components/thorui/tui-toast/tui-toast */ "components/thorui/tui-toast/tui-toast").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-toast/tui-toast.vue */ 120))
+      return __webpack_require__.e(/*! import() | components/thorui/tui-toast/tui-toast */ "components/thorui/tui-toast/tui-toast").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-toast/tui-toast.vue */ 118))
     }
   }
 } catch (e) {
@@ -181,7 +178,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+
+
 
 
 
@@ -331,9 +330,11 @@ var _travel_apply = __webpack_require__(/*! @/api/travel_apply.js */ 56);functio
 //
 //
 //
-var tuiUpload = function tuiUpload() {__webpack_require__.e(/*! require.ensure | components/thorui/tui-upload/tui-upload */ "components/thorui/tui-upload/tui-upload").then((function () {return resolve(__webpack_require__(/*! @/components/thorui/tui-upload/tui-upload */ 169));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { tuiUpload: tuiUpload }, data: function data() {return { form: { name: '', forOther: 0, applyReason: '', applyFile: [], expectedOutTime: '', expectedReturnTime: '', expectedDestination: '', travelInformation: '', healthCodeStatus: '', healthCodeFile: '', travelCardFile: '', homeAdd: '', phoneNum: '', emergencyNum: '', relation: '', isOutside: false }, url: 'http://127.0.0.1:8083/api/file/uploadImg', // url: 'http://zyyzty.mynatapp.cc/api/file/uploadImg',
-      header: { Authorization: _index.default.state.user.token, 'Content-Type': 'multipart/form-data' }, fileKey: 'img' };}, methods: { changeForIsOutside: function changeForIsOutside(e) {this.form.isOutside = e.detail.value;}, changeForOther: function changeForOther(e) {if (e.detail.value) {this.form.forOther = 1;} else {this.form.forOther = 0;this.form.relation = '';}}, uploadApplyFileComplete: function uploadApplyFileComplete(e) {console.log(e);this.form.applyFile = e.imgArr;}, removeApplyFileComplete: function removeApplyFileComplete(e) {var index = e.index;}, uploadHealthCodeFileComplete: function uploadHealthCodeFileComplete(e) {console.log(e);this.form.healthCodeFile = e.imgArr[0];}, removeHealthCodeFileComplete: function removeHealthCodeFileComplete(e) {var index = e.index;}, uploadTravelCardFileComplete: function uploadTravelCardFileComplete(e) {console.log(e);this.form.travelCardFile = e.imgArr[0];}, removeTravelCardFileComplete: function removeTravelCardFileComplete(e) {var index = e.index;}, showOutTime: function showOutTime(e) {this.$refs.outDataTime.show();}, changeOutTime: function changeOutTime(e) {this.form.expectedOutTime = _tuiUtils.default.formatDate('y-m-d h:i:s', e.result, 1);}, showReturnTime: function showReturnTime(e) {this.$refs.returnDataTime.show();
-    },
+//
+//
+var tuiUpload = function tuiUpload() {__webpack_require__.e(/*! require.ensure | components/thorui/tui-upload/tui-upload */ "components/thorui/tui-upload/tui-upload").then((function () {return resolve(__webpack_require__(/*! @/components/thorui/tui-upload/tui-upload */ 167));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { tuiUpload: tuiUpload }, data: function data() {return { form: { name: '', forOther: 0, applyReason: '', applyFile: [], expectedOutTime: '', expectedReturnTime: '', expectedDestination: '', travelInformation: '', healthCodeStatus: '', healthCodeFile: '', travelCardFile: '', homeAdd: '', phoneNum: '', emergencyNum: '', relation: '', isOutside: false, isAuthorization: false }, // url: 'http://127.0.0.1:8083/api/file/uploadImg',
+      url: 'http://192.168.1.110:8083/api/file/uploadImg', // url: 'http://zyyzty.mynatapp.cc/api/file/uploadImg',
+      header: { Authorization: _index.default.state.user.token, 'Content-Type': 'multipart/form-data' }, fileKey: 'img' };}, methods: { changeForIsOutside: function changeForIsOutside(e) {this.form.isOutside = e.detail.value;}, changeForOther: function changeForOther(e) {if (e.detail.value) {this.form.forOther = 1;} else {this.form.forOther = 0;this.form.relation = '';}}, uploadApplyFileComplete: function uploadApplyFileComplete(e) {console.log(e);this.form.applyFile = e.imgArr;}, removeApplyFileComplete: function removeApplyFileComplete(e) {var index = e.index;}, uploadHealthCodeFileComplete: function uploadHealthCodeFileComplete(e) {console.log(e);this.form.healthCodeFile = e.imgArr[0];}, removeHealthCodeFileComplete: function removeHealthCodeFileComplete(e) {var index = e.index;}, uploadTravelCardFileComplete: function uploadTravelCardFileComplete(e) {console.log(e);this.form.travelCardFile = e.imgArr[0];}, removeTravelCardFileComplete: function removeTravelCardFileComplete(e) {var index = e.index;}, showOutTime: function showOutTime(e) {this.$refs.outDataTime.show();}, changeOutTime: function changeOutTime(e) {this.form.expectedOutTime = _tuiUtils.default.formatDate('y-m-d h:i:s', e.result, 1);}, showReturnTime: function showReturnTime(e) {this.$refs.returnDataTime.show();},
     changeReturnTime: function changeReturnTime(e) {
       this.form.expectedReturnTime = _tuiUtils.default.formatDate('y-m-d h:i:s', e.result, 1);
     },
@@ -360,16 +361,35 @@ var tuiUpload = function tuiUpload() {__webpack_require__.e(/*! require.ensure |
         travelCardFile: this.form.travelCardFile,
         travelInformation: this.form.travelInformation };
 
-      (0, _travel_apply.submitTravelApplication)(form).then(function (res) {
-        var params = {
-          title: "操作成功",
-          content: "更新个人信息成功！" };
+      if (this.isAuthorization) {
+        (0, _travel_apply.submitTravelApplication)(form).then(function (res) {
+          var params = {
+            title: "操作成功",
+            content: "更新个人信息成功！" };
 
-        _this.$refs.msg.show(params);
-      }).catch(function (err) {
-        console.log(err);
-      });
+          _this.$refs.msg.show(params);
+        }).catch(function (err) {
+          console.log(err);
+        });
+      } else {
+        var params = {
+          title: "操作失败",
+          content: "请先完成授权！" };
+
+        this.$refs.msg.show(params);
+      }
+
+    },
+    requestMsg: function requestMsg() {
+      this.isAuthorization = true;
+      uni.requestSubscribeMessage({
+        tmplIds: ['y8IF9AbRw6sJPV255ExMSjIAGhqmE5mli6U-xbKWgAM'],
+        success: function success(res) {
+          console.log('已授权接收订阅消息');
+        } });
+
     } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ })
 

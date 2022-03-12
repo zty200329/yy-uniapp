@@ -22,11 +22,11 @@
     <text>上传申请附件(最多3张图片)</text>
     <tui-upload :value="form.applyFile" :limit="3" :header="header" :delConfirm="true" :fileKeyName="fileKey"
                 :serverUrl="url" @complete="uploadApplyFileComplete" @remove="removeApplyFileComplete"></tui-upload>
-    <tui-button @click="showOutTime" plain shape="circle">
+    <tui-button @click="showOutTime" plain link shape="circle">
       {{ form.expectedOutTime ? '出行时间:' + form.expectedOutTime : '请选择出行时间' }}
     </tui-button>
     <tui-datetime ref="outDataTime" :type="1" @confirm="changeOutTime"></tui-datetime>
-    <tui-button @click="showReturnTime" plain shape="circle">
+    <tui-button @click="showReturnTime" plain link shape="circle">
       {{ form.expectedReturnTime ? '返回时间:' + form.expectedReturnTime : '请选择返回时间' }}
     </tui-button>
     <tui-datetime ref="returnDataTime" :type="1" @confirm="changeReturnTime"></tui-datetime>
@@ -66,7 +66,9 @@
     <tui-textarea v-model="form.homeAdd" flexStart label="家庭住址" placeholder="请输入你的家庭住址，写清楚门牌号"></tui-textarea>
     <tui-input label="手机号" placeholder="请输入出行人手机号" v-model="form.phoneNum"></tui-input>
     <tui-input label="紧急联系人手机号" placeholder="请输入紧急联系人手机号" v-model="form.emergencyNum"></tui-input>
-    <tui-form-button radius="50px" @click="submitApply">提交申请</tui-form-button>
+    <tui-button  plain link  @click="requestMsg">订阅消息，请务必订阅，否则无法接收消息</tui-button>
+
+    <tui-button  @click="submitApply">提交申请</tui-button>
     <tui-toast ref="msg"></tui-toast>
   </view>
 </template>
@@ -99,8 +101,10 @@ export default {
         emergencyNum: '',
         relation: '',
         isOutside: false,
+        isAuthorization: false,
       },
-      url: 'http://127.0.0.1:8083/api/file/uploadImg',
+      // url: 'http://127.0.0.1:8083/api/file/uploadImg',
+      url: 'http://192.168.1.110:8083/api/file/uploadImg',
       // url: 'http://zyyzty.mynatapp.cc/api/file/uploadImg',
       header: {
         Authorization: store.state.user.token,
@@ -177,14 +181,32 @@ export default {
         travelCardFile: this.form.travelCardFile,
         travelInformation: this.form.travelInformation
       }
-      submitTravelApplication(form).then(res => {
+      if(this.isAuthorization){
+        submitTravelApplication(form).then(res => {
+          let params = {
+            title: "操作成功",
+            content: "更新个人信息成功！"
+          }
+          this.$refs.msg.show(params);
+        }).catch(err => {
+          console.log(err)
+        })
+      } else{
         let params = {
-          title: "操作成功",
-          content: "更新个人信息成功！"
+          title: "操作失败",
+          content: "请先完成授权！"
         }
         this.$refs.msg.show(params);
-      }).catch(err => {
-        console.log(err)
+      }
+
+    },
+    requestMsg(){
+      this.isAuthorization = true
+      uni.requestSubscribeMessage({
+        tmplIds: ['y8IF9AbRw6sJPV255ExMSjIAGhqmE5mli6U-xbKWgAM'],
+        success(res) {
+          console.log('已授权接收订阅消息')
+        }
       })
     }
   }
