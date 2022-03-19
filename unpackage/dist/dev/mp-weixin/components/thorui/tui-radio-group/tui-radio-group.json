@@ -1,6 +1,0 @@
-{
-  "usingComponents": {
-    "tui-form-field": "/components/thorui/tui-form-field/tui-form-field"
-  },
-  "component": true
-}
