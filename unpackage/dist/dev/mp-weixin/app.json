@@ -7,12 +7,16 @@
     "pages/travel_apply/travel_apply",
     "pages/travel_list/travel_list",
     "pages/out_register/out_register",
-    "pages/send_message/send_message"
+    "pages/send_message/send_message",
+    "pages/user_punch/user_punch",
+    "pages/feedback_main/feedback_main",
+    "pages/feedback_detail/feedback_detail",
+    "pages/submit_feedback/submit_feedback"
   ],
   "subPackages": [],
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "Thor UI",
+    "navigationBarTitleText": "毕业设计",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
   },
@@ -32,6 +36,11 @@
         "selectedIconPath": "static/tab-icons/my-1.png"
       }
     ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于记录打卡位置"
+    }
   },
   "usingComponents": {}
 }

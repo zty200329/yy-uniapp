@@ -11,15 +11,22 @@
 
       <navigator url="../travel_query/travel_query" class="update-item">出行政策查询</navigator>
     </tui-grid-item>
-    <tui-grid-item :cell="2" @click="detail">
+    <tui-grid-item :cell="2">
 
       <navigator url="../travel_apply/travel_apply" class="update-item">紧急出行申请</navigator>
     </tui-grid-item>
-    <tui-grid-item :cell="2" @click="detail">
+    <tui-grid-item :cell="2">
 
       <navigator url="../travel_list/travel_list" class="update-item">查看出行申请</navigator>
     </tui-grid-item>
-    <tui-button @click="test">测试</tui-button>
+	<tui-grid-item :cell="2">
+	
+	  <navigator url="../user_punch/user_punch" class="update-item">健康打卡</navigator>
+	</tui-grid-item>
+	<tui-grid-item :cell="2">
+	
+	  <navigator url="../feedback_main/feedback_main" class="update-item">意见反馈</navigator>
+	</tui-grid-item>
   </view>
 
 </template>
@@ -33,7 +40,7 @@ import TuiButton from "../../components/thorui/tui-button/tui-button";
 export default {
   data() {
     return {
-      content: '扬扬是我宝贝！！',
+      content: '通知！！',
     }
   },
   components: {

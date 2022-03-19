@@ -2,7 +2,7 @@
 	"pages": [{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "扬扬小宝贝"
+				"navigationBarTitleText": "毕业设计"
 			}
 		},
 		{
@@ -22,33 +22,61 @@
 		}
 	    ,{
             "path" : "pages/travel_query/travel_query",
-            "style" :                                                                                    
+            "style" :
             {
                 "navigationBarTitleText": "",
                 "enablePullDownRefresh": false
             }
-            
+
         }
         ,{
             "path" : "pages/travel_apply/travel_apply",
-            "style" :                                                                                    
+            "style" :
             {
                 "navigationBarTitleText": "",
                 "enablePullDownRefresh": false
             }
-            
+
         }
         ,{
             "path" : "pages/travel_list/travel_list",
-            "style" :                                                                                    
+            "style" :
             {
                 "navigationBarTitleText": "",
                 "enablePullDownRefresh": false
             }
-            
+
         }
         ,{
             "path" : "pages/out_register/out_register",
+            "style" :
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+
+        }
+        ,{
+            "path" : "pages/send_message/send_message",
+            "style" :
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+
+        }
+        ,{
+            "path" : "pages/user_punch/user_punch",
+            "style" :
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+
+        }
+        
+        ,{
+            "path" : "pages/feedback_main/feedback_main",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
@@ -57,7 +85,16 @@
             
         }
         ,{
-            "path" : "pages/send_message/send_message",
+            "path" : "pages/feedback_detail/feedback_detail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/submit_feedback/submit_feedback",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
@@ -74,7 +111,7 @@
 	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "Thor UI",
+		"navigationBarTitleText": "毕业设计",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	},

@@ -94,34 +94,34 @@ var components
 try {
   components = {
     tuiInput: function() {
-      return __webpack_require__.e(/*! import() | components/thorui/tui-input/tui-input */ "components/thorui/tui-input/tui-input").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-input/tui-input.vue */ 85))
+      return __webpack_require__.e(/*! import() | components/thorui/tui-input/tui-input */ "components/thorui/tui-input/tui-input").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-input/tui-input.vue */ 137))
     },
     tuiSwitch: function() {
-      return __webpack_require__.e(/*! import() | components/thorui/tui-switch/tui-switch */ "components/thorui/tui-switch/tui-switch").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-switch/tui-switch.vue */ 153))
+      return __webpack_require__.e(/*! import() | components/thorui/tui-switch/tui-switch */ "components/thorui/tui-switch/tui-switch").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-switch/tui-switch.vue */ 198))
     },
     tuiTextarea: function() {
-      return __webpack_require__.e(/*! import() | components/thorui/tui-textarea/tui-textarea */ "components/thorui/tui-textarea/tui-textarea").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-textarea/tui-textarea.vue */ 160))
+      return __webpack_require__.e(/*! import() | components/thorui/tui-textarea/tui-textarea */ "components/thorui/tui-textarea/tui-textarea").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-textarea/tui-textarea.vue */ 205))
     },
     tuiUpload: function() {
-      return __webpack_require__.e(/*! import() | components/thorui/tui-upload/tui-upload */ "components/thorui/tui-upload/tui-upload").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-upload/tui-upload.vue */ 167))
+      return __webpack_require__.e(/*! import() | components/thorui/tui-upload/tui-upload */ "components/thorui/tui-upload/tui-upload").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-upload/tui-upload.vue */ 212))
     },
     tuiButton: function() {
-      return __webpack_require__.e(/*! import() | components/thorui/tui-button/tui-button */ "components/thorui/tui-button/tui-button").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-button/tui-button.vue */ 111))
+      return __webpack_require__.e(/*! import() | components/thorui/tui-button/tui-button */ "components/thorui/tui-button/tui-button").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-button/tui-button.vue */ 115))
     },
     tuiDatetime: function() {
-      return __webpack_require__.e(/*! import() | components/thorui/tui-datetime/tui-datetime */ "components/thorui/tui-datetime/tui-datetime").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-datetime/tui-datetime.vue */ 125))
+      return __webpack_require__.e(/*! import() | components/thorui/tui-datetime/tui-datetime */ "components/thorui/tui-datetime/tui-datetime").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-datetime/tui-datetime.vue */ 170))
     },
     tuiRadioGroup: function() {
-      return __webpack_require__.e(/*! import() | components/thorui/tui-radio-group/tui-radio-group */ "components/thorui/tui-radio-group/tui-radio-group").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-radio-group/tui-radio-group.vue */ 92))
+      return __webpack_require__.e(/*! import() | components/thorui/tui-radio-group/tui-radio-group */ "components/thorui/tui-radio-group/tui-radio-group").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-radio-group/tui-radio-group.vue */ 144))
     },
     tuiLabel: function() {
-      return __webpack_require__.e(/*! import() | components/thorui/tui-label/tui-label */ "components/thorui/tui-label/tui-label").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-label/tui-label.vue */ 97))
+      return __webpack_require__.e(/*! import() | components/thorui/tui-label/tui-label */ "components/thorui/tui-label/tui-label").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-label/tui-label.vue */ 149))
     },
     tuiRadio: function() {
-      return __webpack_require__.e(/*! import() | components/thorui/tui-radio/tui-radio */ "components/thorui/tui-radio/tui-radio").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-radio/tui-radio.vue */ 104))
+      return __webpack_require__.e(/*! import() | components/thorui/tui-radio/tui-radio */ "components/thorui/tui-radio/tui-radio").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-radio/tui-radio.vue */ 156))
     },
     tuiToast: function() {
-      return __webpack_require__.e(/*! import() | components/thorui/tui-toast/tui-toast */ "components/thorui/tui-toast/tui-toast").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-toast/tui-toast.vue */ 118))
+      return __webpack_require__.e(/*! import() | components/thorui/tui-toast/tui-toast */ "components/thorui/tui-toast/tui-toast").then(__webpack_require__.bind(null, /*! @/components/thorui/tui-toast/tui-toast.vue */ 163))
     }
   }
 } catch (e) {
@@ -332,8 +332,9 @@ var _travel_apply = __webpack_require__(/*! @/api/travel_apply.js */ 56);functio
 //
 //
 //
-var tuiUpload = function tuiUpload() {__webpack_require__.e(/*! require.ensure | components/thorui/tui-upload/tui-upload */ "components/thorui/tui-upload/tui-upload").then((function () {return resolve(__webpack_require__(/*! @/components/thorui/tui-upload/tui-upload */ 167));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { tuiUpload: tuiUpload }, data: function data() {return { form: { name: '', forOther: 0, applyReason: '', applyFile: [], expectedOutTime: '', expectedReturnTime: '', expectedDestination: '', travelInformation: '', healthCodeStatus: '', healthCodeFile: '', travelCardFile: '', homeAdd: '', phoneNum: '', emergencyNum: '', relation: '', isOutside: false, isAuthorization: false }, // url: 'http://127.0.0.1:8083/api/file/uploadImg',
-      url: 'http://192.168.1.110:8083/api/file/uploadImg', // url: 'http://zyyzty.mynatapp.cc/api/file/uploadImg',
+var tuiUpload = function tuiUpload() {__webpack_require__.e(/*! require.ensure | components/thorui/tui-upload/tui-upload */ "components/thorui/tui-upload/tui-upload").then((function () {return resolve(__webpack_require__(/*! @/components/thorui/tui-upload/tui-upload */ 212));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { tuiUpload: tuiUpload }, data: function data() {return { form: { name: '', forOther: 0, applyReason: '', applyFile: [], expectedOutTime: '', expectedReturnTime: '', expectedDestination: '', travelInformation: '', healthCodeStatus: '', healthCodeFile: '', travelCardFile: '', homeAdd: '', phoneNum: '', emergencyNum: '', relation: '', isOutside: false, isAuthorization: false }, url: 'http://127.0.0.1:8083/api/file/uploadImg', // url: 'http://192.168.1.100:8083/api/file/uploadImg',
+      // url: 'http://zyyzty.mynatapp.cc/api/fil
+      // e/uploadImg',
       header: { Authorization: _index.default.state.user.token, 'Content-Type': 'multipart/form-data' }, fileKey: 'img' };}, methods: { changeForIsOutside: function changeForIsOutside(e) {this.form.isOutside = e.detail.value;}, changeForOther: function changeForOther(e) {if (e.detail.value) {this.form.forOther = 1;} else {this.form.forOther = 0;this.form.relation = '';}}, uploadApplyFileComplete: function uploadApplyFileComplete(e) {console.log(e);this.form.applyFile = e.imgArr;}, removeApplyFileComplete: function removeApplyFileComplete(e) {var index = e.index;}, uploadHealthCodeFileComplete: function uploadHealthCodeFileComplete(e) {console.log(e);this.form.healthCodeFile = e.imgArr[0];}, removeHealthCodeFileComplete: function removeHealthCodeFileComplete(e) {var index = e.index;}, uploadTravelCardFileComplete: function uploadTravelCardFileComplete(e) {console.log(e);this.form.travelCardFile = e.imgArr[0];}, removeTravelCardFileComplete: function removeTravelCardFileComplete(e) {var index = e.index;}, showOutTime: function showOutTime(e) {this.$refs.outDataTime.show();}, changeOutTime: function changeOutTime(e) {this.form.expectedOutTime = _tuiUtils.default.formatDate('y-m-d h:i:s', e.result, 1);}, showReturnTime: function showReturnTime(e) {this.$refs.returnDataTime.show();},
     changeReturnTime: function changeReturnTime(e) {
       this.form.expectedReturnTime = _tuiUtils.default.formatDate('y-m-d h:i:s', e.result, 1);

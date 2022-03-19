@@ -103,9 +103,10 @@ export default {
         isOutside: false,
         isAuthorization: false,
       },
-      // url: 'http://127.0.0.1:8083/api/file/uploadImg',
-      url: 'http://192.168.1.110:8083/api/file/uploadImg',
-      // url: 'http://zyyzty.mynatapp.cc/api/file/uploadImg',
+      url: 'http://127.0.0.1:8083/api/file/uploadImg',
+      // url: 'http://192.168.1.100:8083/api/file/uploadImg',
+      // url: 'http://zyyzty.mynatapp.cc/api/fil
+      // e/uploadImg',
       header: {
         Authorization: store.state.user.token,
         'Content-Type': 'multipart/form-data'

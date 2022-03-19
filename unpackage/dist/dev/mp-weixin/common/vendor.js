@@ -947,7 +947,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"ThorUI-Hello","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"扬扬毕业设计","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -2088,6 +2088,206 @@ var uni$1 = uni;var _default =
 
 uni$1;exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ 2)))
+
+/***/ }),
+
+/***/ 105:
+/*!*****************************************************************************!*\
+  !*** /Users/zty/Documents/uniapp/yy/components/thorui/tui-icon/tui-icon.js ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  "about": "\uE772",
+  "about-fill": "\uE771",
+  "add": "\uE770",
+  "add-fill": "\uE76F",
+  "addmessage": "\uE76E",
+  "addressbook": "\uE76D",
+  "agree": "\uE76C",
+  "agree-fill": "\uE76B",
+  "alarm": "\uE76A",
+  "alarm-fill": "\uE769",
+  "alipay": "\uE768",
+  "android": "\uE767",
+  "applets": "\uE766",
+  "arrowdown": "\uE765",
+  "arrowleft": "\uE764",
+  "arrowright": "\uE763",
+  "arrowup": "\uE762",
+  "attestation": "\uE761",
+  "back": "\uE760",
+  "bag": "\uE75F",
+  "bag-fill": "\uE75E",
+  "balloon": "\uE75D",
+  "bankcard": "\uE75C",
+  "bankcard-fill": "\uE75B",
+  "bottom": "\uE75A",
+  "calendar": "\uE759",
+  "camera": "\uE758",
+  "camera-fill": "\uE757",
+  "camera-add": "\uE756",
+  "card": "\uE755",
+  "card-fill": "\uE754",
+  "cart": "\uE753",
+  "cart-fill": "\uE752",
+  "category": "\uE751",
+  "category-fill": "\uE750",
+  "check": "\uE74F",
+  "circle": "\uE74E",
+  "circle-fill": "\uE74D",
+  "circle-selected": "\uE74C",
+  "clock": "\uE74B",
+  "clock-fill": "\uE74A",
+  "close": "\uE749",
+  "close-fill": "\uE748",
+  "community": "\uE747",
+  "community-fill": "\uE746",
+  "computer": "\uE745",
+  "computer-fill": "\uE744",
+  "coupon": "\uE743",
+  "delete": "\uE742",
+  "deletekey": "\uE741",
+  "dingtalk": "\uE740",
+  "dissatisfied": "\uE73F",
+  "down": "\uE73E",
+  "download": "\uE73D",
+  "edit": "\uE73C",
+  "ellipsis": "\uE73B",
+  "enlarge": "\uE73A",
+  "evaluate": "\uE739",
+  "exchange": "\uE738",
+  "explain": "\uE737",
+  "explain-fill": "\uE736",
+  "explore": "\uE735",
+  "explore-fill": "\uE734",
+  "eye": "\uE733",
+  "feedback": "\uE732",
+  "fingerprint": "\uE730",
+  "friendadd": "\uE72F",
+  "friendadd-fill": "\uE72E",
+  "gps": "\uE72D",
+  "histogram": "\uE72C",
+  "home": "\uE72B",
+  "home-fill": "\uE72A",
+  "house": "\uE729",
+  "imface": "\uE728",
+  "imkeyboard": "\uE727",
+  "immore": "\uE726",
+  "imvoice": "\uE725",
+  "ios": "\uE724",
+  "kefu": "\uE723",
+  "label": "\uE722",
+  "label-fill": "\uE721",
+  "like": "\uE720",
+  "like-fill": "\uE71F",
+  "link": "\uE71E",
+  "listview": "\uE71D",
+  "loading": "\uE71C",
+  "location": "\uE71B",
+  "mail": "\uE71A",
+  "mail-fill": "\uE719",
+  "manage": "\uE718",
+  "manage-fill": "\uE717",
+  "member": "\uE716",
+  "member-fill": "\uE715",
+  "message": "\uE714",
+  "message-fill": "\uE713",
+  "mobile": "\uE712",
+  "moments": "\uE711",
+  "more": "\uE710",
+  "more-fill": "\uE70F",
+  "narrow": "\uE70E",
+  "news": "\uE70D",
+  "news-fill": "\uE70C",
+  "nodata": "\uE70B",
+  "notice": "\uE699",
+  "notice-fill": "\uE698",
+  "offline": "\uE697",
+  "offline-fill": "\uE696",
+  "oppose": "\uE695",
+  "oppose-fill": "\uE694",
+  "order": "\uE693",
+  "partake": "\uE692",
+  "people": "\uE691",
+  "people-fill": "\uE690",
+  "pic": "\uE68F",
+  "pic-fill": "\uE68E",
+  "picture": "\uE68D",
+  "pie": "\uE68C",
+  "plus": "\uE689",
+  "polygonal": "\uE688",
+  "position": "\uE686",
+  "pwd": "\uE685",
+  "qq": "\uE684",
+  "qrcode": "\uE682",
+  "redpacket": "\uE681",
+  "redpacket-fill": "\uE680",
+  "reduce": "\uE67F",
+  "refresh": "\uE67E",
+  "revoke": "\uE67D",
+  "satisfied": "\uE67C",
+  "screen": "\uE67B",
+  "search": "\uE67A",
+  "search-2": "\uE679",
+  "send": "\uE678",
+  "service": "\uE677",
+  "service-fill": "\uE676",
+  "setup": "\uE675",
+  "setup-fill": "\uE674",
+  "share": "\uE673",
+  "share-fill": "\uE672",
+  "shield": "\uE671",
+  "shop": "\uE670",
+  "shop-fill": "\uE66F",
+  "shut": "\uE66E",
+  "signin": "\uE66D",
+  "sina": "\uE66C",
+  "skin": "\uE66B",
+  "soso": "\uE669",
+  "square": "\uE668",
+  "square-fill": "\uE667",
+  "square-selected": "\uE666",
+  "star": "\uE665",
+  "star-fill": "\uE664",
+  "strategy": "\uE663",
+  "sweep": "\uE662",
+  "time": "\uE661",
+  "time-fill": "\uE660",
+  "todown": "\uE65F",
+  "toleft": "\uE65E",
+  "tool": "\uE65D",
+  "top": "\uE65C",
+  "toright": "\uE65B",
+  "towardsleft": "\uE65A",
+  "towardsright": "\uE659",
+  "towardsright-fill": "\uE658",
+  "transport": "\uE657",
+  "transport-fill": "\uE656",
+  "turningdown": "\uE654",
+  "turningleft": "\uE653",
+  "turningright": "\uE652",
+  "turningup": "\uE651",
+  "unreceive": "\uE650",
+  "seen": "\uE7D2",
+  "unseen": "\uE7D1",
+  "up": "\uE64E",
+  "upload": "\uE64C",
+  "video": "\uE64B",
+  "voice": "\uE649",
+  "voice-fill": "\uE648",
+  "voipphone": "\uE647",
+  "wallet": "\uE646",
+  "warning": "\uE645",
+  "wealth": "\uE644",
+  "wealth-fill": "\uE643",
+  "weather": "\uE642",
+  "wechat": "\uE641",
+  "wifi": "\uE640",
+  "play": "\uE7D5",
+  "suspend": "\uE7D4" };exports.default = _default;
 
 /***/ }),
 
@@ -3504,6 +3704,329 @@ module.exports = index_cjs;
 
 /***/ }),
 
+/***/ 134:
+/*!***********************************************************************************!*\
+  !*** /Users/zty/Documents/uniapp/yy/components/thorui/tui-form/tui-validation.js ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;function _createForOfIteratorHelper(o, allowArrayLike) {var it;if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) {if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") {if (it) o = it;var i = 0;var F = function F() {};return { s: F, n: function n() {if (i >= o.length) return { done: true };return { done: false, value: o[i++] };}, e: function e(_e) {throw _e;}, f: F };}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}var normalCompletion = true,didErr = false,err;return { s: function s() {it = o[Symbol.iterator]();}, n: function n() {var step = it.next();normalCompletion = step.done;return step;}, e: function e(_e2) {didErr = true;err = _e2;}, f: function f() {try {if (!normalCompletion && it.return != null) it.return();} finally {if (didErr) throw err;}} };}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(o);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;} /**
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * 表单验证
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * @author echo.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * @version 1.6.6
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            **/
+
+var form = {
+  //非必填情况下,如果值为空,则不进行校验
+  //当出现错误时返回错误消息，否则返回空即为验证通过
+  /*
+   formData:Object 表单对象。{key:value,key:value},key==rules.name
+   rules: Array [{name:name,rule:[],msg:[],validator:[],{name:name,rule:[],msg:[],validator:[]}]
+  		name:name 属性=> 元素的名称
+  		rule:字符串数组 ["required","isMobile","isEmail","isCarNo","isIdCard","isAmount","isNum","isChinese","isNotChinese","isEnglish",isEnAndNo","isSpecial","isEmoji",""isDate","isUrl","isSame:key","range:[1,9]","minLength:9","maxLength:Number","isKeyword:key1,key2,key3..."]
+  		msg:数组 []。 与数组 rule 长度相同,对应的错误提示信息
+  		validator:[{msg:'错误消息',method:Function}]，自定义验证方法组，函数约定：(value)=>{ return true or false}
+  */
+  validation: function validation(formData, rules) {var _iterator = _createForOfIteratorHelper(
+    rules),_step;try {for (_iterator.s(); !(_step = _iterator.n()).done;) {var item = _step.value;
+        var key = item.name;
+        var rule = item.rule;
+        var validator = item.validator;
+        var msgArr = item.msg;
+        if (!key || !rule || rule.length === 0 || !msgArr || msgArr.length === 0 || !~rule.indexOf(
+        "required") && formData[key].toString().
+        length === 0) {
+          continue;
+        }
+        for (var i = 0, length = rule.length; i < length; i++) {
+          var ruleItem = rule[i];
+          var msg = msgArr[i];
+          if (!msg || !ruleItem) continue;
+          //数据处理
+          var value = null;
+          if (~ruleItem.indexOf(":")) {
+            var temp = ruleItem.split(":");
+            ruleItem = temp[0];
+            value = temp[1];
+          }
+          var isError = false;
+          switch (ruleItem) {
+            case "required":
+              isError = form._isNullOrEmpty(formData[key]);
+              break;
+            case "isMobile":
+              isError = !form._isMobile(formData[key]);
+              break;
+            case "isEmail":
+              isError = !form._isEmail(formData[key]);
+              break;
+            case "isCarNo":
+              isError = !form._isCarNo(formData[key]);
+              break;
+            case "isIdCard":
+              isError = !form._isIdCard(formData[key]);
+              break;
+            case "isAmount":
+              isError = !form._isAmount(formData[key]);
+              break;
+            case "isNum":
+              isError = !form._isNum(formData[key]);
+              break;
+            case "isChinese":
+              isError = !form._isChinese(formData[key]);
+              break;
+            case "isNotChinese":
+              isError = !form._isNotChinese(formData[key]);
+              break;
+            case "isEnglish":
+              isError = !form._isEnglish(formData[key]);
+              break;
+            case "isEnAndNo":
+              isError = !form._isEnAndNo(formData[key]);
+              break;
+            case "isEnOrNo":
+              isError = !form._isEnOrNo(formData[key]);
+              break;
+            case "isSpecial":
+              isError = form._isSpecial(formData[key]);
+              break;
+            case "isEmoji":
+              isError = form._isEmoji(formData[key]);
+              break;
+            case "isDate":
+              isError = !form._isDate(formData[key]);
+              break;
+            case "isUrl":
+              isError = !form._isUrl(formData[key]);
+              break;
+            case "isSame":
+              isError = !form._isSame(formData[key], formData[value]);
+              break;
+            case "range":
+              var range = null;
+              try {
+                range = JSON.parse(value);
+                if (range.length <= 1) {
+                  throw new Error("range值传入有误！");
+                }
+              } catch (e) {
+                return "range值传入有误！";
+              }
+              isError = !form._isRange(formData[key], range[0], range[1]);
+              break;
+            case "minLength":
+              isError = !form._minLength(formData[key], value);
+              break;
+            case "maxLength":
+              isError = !form._maxLength(formData[key], value);
+              break;
+            case "isKeyword":
+              isError = !form._isKeyword(formData[key], value);
+              break;
+            default:
+              break;}
+
+
+          if (isError) {
+            return msg;
+          }
+        }
+        if (validator && validator.length > 0) {var _iterator2 = _createForOfIteratorHelper(
+          validator),_step2;try {for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {var model = _step2.value;
+              var func = model.method;
+              if (func && !func(formData[key])) {
+                return model.msg;
+              }
+            }} catch (err) {_iterator2.e(err);} finally {_iterator2.f();}
+        }
+      }} catch (err) {_iterator.e(err);} finally {_iterator.f();}
+    return "";
+  },
+  //允许填写字符串null或者undefined
+  _isNullOrEmpty: function _isNullOrEmpty(value) {
+    return value === null || value === '' || value === undefined ? true : false;
+  },
+  _isMobile: function _isMobile(value) {
+    return /^(?:13\d|14\d|15\d|16\d|17\d|18\d|19\d)\d{5}(\d{3}|\*{3})$/.test(value);
+  },
+  _isEmail: function _isEmail(value) {
+    return /^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$/.test(value);
+  },
+  _isCarNo: function _isCarNo(value) {
+    // 新能源车牌
+    var xreg =
+    /^[京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领A-Z]{1}[A-Z]{1}(([0-9]{5}[DF]$)|([DF][A-HJ-NP-Z0-9][0-9]{4}$))/;
+    // 旧车牌
+    var creg =
+    /^[京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领A-Z]{1}[A-Z]{1}[A-HJ-NP-Z0-9]{4}[A-HJ-NP-Z0-9挂学警港澳]{1}$/;
+    if (value.length === 7) {
+      return creg.test(value);
+    } else if (value.length === 8) {
+      return xreg.test(value);
+    } else {
+      return false;
+    }
+  },
+  _isIdCard: function _isIdCard(value) {
+    var idCard = value;
+    if (idCard.length == 15) {
+      return this.__isValidityBrithBy15IdCard;
+    } else if (idCard.length == 18) {
+      var arrIdCard = idCard.split("");
+      if (this.__isValidityBrithBy18IdCard(idCard) && this.__isTrueValidateCodeBy18IdCard(arrIdCard)) {
+        return true;
+      } else {
+        return false;
+      }
+    } else {
+      return false;
+    }
+  },
+  __isTrueValidateCodeBy18IdCard: function __isTrueValidateCodeBy18IdCard(arrIdCard) {
+    var sum = 0;
+    var Wi = [7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2, 1];
+    var ValideCode = [1, 0, 10, 9, 8, 7, 6, 5, 4, 3, 2];
+    if (arrIdCard[17].toLowerCase() == 'x') {
+      arrIdCard[17] = 10;
+    }
+    for (var i = 0; i < 17; i++) {
+      sum += Wi[i] * arrIdCard[i];
+    }
+    var valCodePosition = sum % 11;
+    if (arrIdCard[17] == ValideCode[valCodePosition]) {
+      return true;
+    } else {
+      return false;
+    }
+  },
+  __isValidityBrithBy18IdCard: function __isValidityBrithBy18IdCard(idCard18) {
+    var year = idCard18.substring(6, 10);
+    var month = idCard18.substring(10, 12);
+    var day = idCard18.substring(12, 14);
+    var temp_date = new Date(year, parseFloat(month) - 1, parseFloat(day));
+    if (temp_date.getFullYear() != parseFloat(year) || temp_date.getMonth() != parseFloat(month) - 1 ||
+    temp_date.getDate() !=
+    parseFloat(day)) {
+      return false;
+    } else {
+      return true;
+    }
+  },
+  __isValidityBrithBy15IdCard: function __isValidityBrithBy15IdCard(idCard15) {
+    var year = idCard15.substring(6, 8);
+    var month = idCard15.substring(8, 10);
+    var day = idCard15.substring(10, 12);
+    var temp_date = new Date(year, parseFloat(month) - 1, parseFloat(day));
+
+    if (temp_date.getYear() != parseFloat(year) || temp_date.getMonth() != parseFloat(month) - 1 ||
+    temp_date.getDate() !=
+    parseFloat(day)) {
+      return false;
+    } else {
+      return true;
+    }
+  },
+  _isAmount: function _isAmount(value) {
+    //金额，只允许保留两位小数
+    return /^([0-9]*[.]?[0-9])[0-9]{0,1}$/.test(value);
+  },
+  _isNum: function _isNum(value) {
+    //只能为数字
+    return /^[0-9]+$/.test(value);
+  },
+  //是否全部为中文
+  _isChinese: function _isChinese(value) {
+    var reg = /^[\u4e00-\u9fa5]+$/;
+    return value !== "" && reg.test(value) && !form._isSpecial(value) && !form._isEmoji(value);
+  },
+  //是否不包含中文，可以有特殊字符
+  _isNotChinese: function _isNotChinese(value) {
+    var reg = /.*[\u4e00-\u9fa5]+.*$/;
+    var result = true;
+    if (reg.test(value)) {
+      result = false;
+    }
+    return result;
+  },
+  _isEnglish: function _isEnglish(value) {
+    return /^[a-zA-Z]*$/.test(value);
+  },
+  _isEnAndNo: function _isEnAndNo(value) {
+    //8~20位数字和字母组合
+    return /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,20}$/.test(value);
+  },
+  _isEnOrNo: function _isEnOrNo(value) {
+    //英文或者数字
+    var reg = /.*[\u4e00-\u9fa5]+.*$/;
+    var result = true;
+    if (reg.test(value) || form._isSpecial(value) || form._isEmoji(value)) {
+      result = false;
+    }
+    return result;
+  },
+  _isSpecial: function _isSpecial(value) {
+    //是否包含特殊字符
+    var regEn = /[`~!@#$%^&*()_+<>?:"{},.\/;'[\]]/im,
+    regCn = /[·！#￥（——）：；“”‘、，|《。》？、【】[\]]/im;
+    if (regEn.test(value) || regCn.test(value)) {
+      return true;
+    }
+    return false;
+  },
+  _isEmoji: function _isEmoji(value) {
+    //是否包含表情
+    return /\uD83C[\uDF00-\uDFFF]|\uD83D[\uDC00-\uDE4F]/g.test(value);
+  },
+  _isDate: function _isDate(value) {
+    //2019-10-12
+    var reg =
+    /^(?:(?!0000)[0-9]{4}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-8])|(?:0[13-9]|1[0-2])-(?:29|30)|(?:0[13578]|1[02])-31)|(?:[0-9]{2}(?:0[48]|[2468][048]|[13579][26])|(?:0[48]|[2468][048]|[13579][26])00)-02-29)$/;
+    return reg.test(value);
+  },
+  _isUrl: function _isUrl(value) {
+    return /^((https?|ftp|file):\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(:[0-9]{1,5})?((\/?)|(\/[\\\w_!~*\\'()\\\.;?:@&=+$,%#-]+)+\/?)$/.test(value);
+  },
+  _isSame: function _isSame(value1, value2) {
+    return value1 === value2;
+  },
+  _isRange: function _isRange(value, range1, range2) {
+    if (!range1 && range1 != 0 && !range2 && range2 != 0) {
+      return true;
+    } else if (!range1 && range1 != 0) {
+      return value <= range2;
+    } else if (!range2 && range2 != 0) {
+      return value >= range1;
+    } else {
+      return value >= range1 && value <= range2;
+    }
+  },
+  _minLength: function _minLength(value, min) {
+    return value.length >= Number(min);
+  },
+  _maxLength: function _maxLength(value, max) {
+    return value.length <= Number(max);
+  },
+  _isKeyword: function _isKeyword(value, keywords) {
+    //是否包含关键词，敏感词，多个以英文逗号分隔，包含则为false,弹出提示语！
+    var result = true;
+    if (!keywords) return result;
+    var key = keywords.split(',');
+    for (var i = 0, len = key.length; i < len; i++) {
+      if (~value.indexOf(key[i])) {
+        result = false;
+        break;
+      }
+    }
+    return result;
+  } };var _default =
+
+{
+  validation: form.validation };exports.default = _default;
+
+/***/ }),
+
 /***/ 14:
 /*!************************************************************!*\
   !*** /Users/zty/Documents/uniapp/yy/store/modules/user.js ***!
@@ -4471,7 +4994,580 @@ function updateUserInfo(params) {
 
 /***/ }),
 
-/***/ 186:
+/***/ 19:
+/*!*******************************************************!*\
+  !*** /Users/zty/Documents/uniapp/yy/utils/request.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _store = _interopRequireDefault(__webpack_require__(/*! ../store */ 12));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+// const BASE_URL = 'http://127.0.0.1:8083/api';
+// const BASE_URL = 'http://zyyzty.mynatapp.cc/api';
+var BASE_URL = 'http://192.168.1.110:8083/api';
+function request(_ref) {var url = _ref.url,method = _ref.method,data = _ref.data;
+  return new Promise(function (resolve, reject) {
+    uni.request({
+      url: BASE_URL + url,
+      data: data,
+      method: method,
+      header: {
+        Authorization: _store.default.state.user.token },
+
+      success: function success(_ref2) {var data = _ref2.data;
+        if (data.code === 0) {
+          resolve(data.data);
+        } else {
+          uni.showToast({
+            title: data.msg,
+            icon: 'none',
+            mask: true,
+            duration: 5000 });
+
+          reject(data.msg);
+        }
+      },
+      fail: function fail(error) {
+        reject(error);
+
+      },
+      complete: function complete() {
+        // 关闭加载
+        uni.hideLoading();
+      } });
+
+  });
+}var _default =
+
+request;exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+
+/***/ 2:
+/*!***********************************!*\
+  !*** (webpack)/buildin/global.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || new Function("return this")();
+} catch (e) {
+	// This works if the window reference is available
+	if (typeof window === "object") g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ }),
+
+/***/ 20:
+/*!************************************************************!*\
+  !*** /Users/zty/Documents/uniapp/yy/common/httpRequest.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 15));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};} /**
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     * 常用方法封装 请求，文件上传等
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     * @author echo.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     **/
+var tui = {
+  //接口地址
+  interfaceUrl: function interfaceUrl() {
+    return 'https://www.thorui.cn';
+    //return 'https://test.thorui.cn'
+    //return 'https://uat.thorui.cn'
+    // return 'https://prod.thorui.cn'
+  },
+  toast: function toast(text, duration, success) {
+    uni.showToast({
+      title: text || "出错啦~",
+      icon: success ? 'success' : 'none',
+      duration: duration || 2000 });
+
+  },
+  modal: function modal(title, content, showCancel, callback, confirmColor, confirmText) {
+    uni.showModal({
+      title: title || '提示',
+      content: content,
+      showCancel: showCancel,
+      cancelColor: "#555",
+      confirmColor: confirmColor || "#5677fc",
+      confirmText: confirmText || "确定",
+      success: function success(res) {
+        if (res.confirm) {
+          callback && callback(true);
+        } else {
+          callback && callback(false);
+        }
+      } });
+
+  },
+  isAndroid: function isAndroid() {
+    var res = uni.getSystemInfoSync();
+    return res.platform.toLocaleLowerCase() == "android";
+  },
+  isPhoneX: function isPhoneX() {
+    var res = uni.getSystemInfoSync();
+    var iphonex = false;
+    var models = ['iphonex', 'iphonexr', 'iphonexsmax', 'iphone11', 'iphone11pro', 'iphone11promax'];
+    var model = res.model.replace(/\s/g, "").toLowerCase();
+    if (models.includes(model)) {
+      iphonex = true;
+    }
+    return iphonex;
+  },
+  constNum: function constNum() {
+    var time = 0;
+
+
+
+    return time;
+  },
+  delayed: null,
+  showLoading: function showLoading(title) {var mask = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
+    uni.showLoading({
+      mask: mask,
+      title: title || '请稍候...' });
+
+  },
+  /**
+      * 请求数据处理
+      * @param string url 请求地址
+      * @param string method 请求方式
+      *  GET or POST
+      * @param {*} postData 请求参数
+      * @param bool isDelay 是否延迟显示loading
+      * @param bool isForm 数据格式
+      *  true: 'application/x-www-form-urlencoded'
+      *  false:'application/json'
+      * @param bool hideLoading 是否隐藏loading
+      *  true: 隐藏
+      *  false:显示
+      */
+  request: function () {var _request = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee(url, method, postData, isDelay, isForm, hideLoading) {var loadding;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:
+              //接口请求
+              loadding = false;
+              tui.delayed && uni.hideLoading();
+              clearTimeout(tui.delayed);
+              tui.delayed = null;
+              if (!hideLoading) {
+                if (isDelay) {
+                  tui.delayed = setTimeout(function () {
+                    loadding = true;
+                    tui.showLoading();
+                  }, 1000);
+                } else {
+                  loadding = true;
+                  tui.showLoading();
+                }
+              }return _context.abrupt("return",
+
+              new Promise(function (resolve, reject) {
+                uni.request({
+                  url: tui.interfaceUrl() + url,
+                  data: postData,
+                  header: {
+                    'content-type': isForm ? 'application/x-www-form-urlencoded' : 'application/json',
+                    'Authorization': tui.getToken() },
+
+                  method: method, //'GET','POST'
+                  dataType: 'json',
+                  success: function success(res) {
+                    clearTimeout(tui.delayed);
+                    tui.delayed = null;
+                    if (loadding && !hideLoading) {
+                      uni.hideLoading();
+                    }
+                    resolve(res.data);
+                  },
+                  fail: function fail(res) {
+                    clearTimeout(tui.delayed);
+                    tui.delayed = null;
+                    tui.toast("网络不给力，请稍后再试~");
+                    reject(res);
+                  } });
+
+              }));case 6:case "end":return _context.stop();}}}, _callee);}));function request(_x, _x2, _x3, _x4, _x5, _x6) {return _request.apply(this, arguments);}return request;}(),
+
+  /**
+                                                                                                                                                                                         * 上传文件
+                                                                                                                                                                                         * @param string url 请求地址
+                                                                                                                                                                                         * @param string src 文件路径
+                                                                                                                                                                                         */
+  uploadFile: function uploadFile(url, src) {
+    tui.showLoading();
+    return new Promise(function (resolve, reject) {
+      var uploadTask = uni.uploadFile({
+        url: tui.interfaceUrl() + url,
+        filePath: src,
+        name: 'imageFile',
+        header: {
+          'Authorization': tui.getToken() },
+
+        formData: {
+          // sizeArrayText:""
+        },
+        success: function success(res) {
+          uni.hideLoading();
+          var d = JSON.parse(res.data.replace(/\ufeff/g, "") || "{}");
+          if (d.code % 100 == 0) {
+            //返回图片地址
+            var fileObj = d.data;
+            resolve(fileObj);
+          } else {
+            that.toast(res.msg);
+          }
+        },
+        fail: function fail(res) {
+          reject(res);
+          that.toast(res.msg);
+        } });
+
+    });
+  },
+  tuiJsonp: function tuiJsonp(url, callback, callbackname) {
+
+
+
+
+
+
+
+
+  },
+  //设置用户信息
+  setUserInfo: function setUserInfo(mobile, token) {
+    //uni.setStorageSync("thorui_token", token)
+    uni.setStorageSync("thorui_mobile", mobile);
+  },
+  //获取token
+  getToken: function getToken() {
+    return uni.getStorageSync("thorui_token");
+  },
+  //判断是否登录
+  isLogin: function isLogin() {
+    return uni.getStorageSync("thorui_mobile") ? true : false;
+  },
+  //跳转页面，校验登录状态
+  href: function href(url, isVerify) {
+    if (isVerify && !tui.isLogin()) {
+      uni.navigateTo({
+        url: '/pages/common/login/login' });
+
+    } else {
+      uni.navigateTo({
+        url: url });
+
+    }
+  } };var _default =
+
+
+tui;exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+
+/***/ 21:
+/*!*****************************************************************************!*\
+  !*** /Users/zty/Documents/uniapp/yy/components/common/tui-request/index.js ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+
+
+
+
+
+
+var _tuiBase = _interopRequireDefault(__webpack_require__(/*! ./tui-base.js */ 22));
+var _tuiTaskKeyStore = _interopRequireDefault(__webpack_require__(/*! ./tui-taskKeyStore.js */ 23));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}
+
+var store = (0, _tuiTaskKeyStore.default)();var
+
+THORUI_INNER = /*#__PURE__*/function () {
+  function THORUI_INNER() {var initConfig = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};_classCallCheck(this, THORUI_INNER);
+    this.initConfig = initConfig;
+    this.request = [];
+    this.response = [];
+    this.dispatchRequest = this.dispatchRequest.bind(this);
+  }_createClass(THORUI_INNER, [{ key: "dispatchRequest", value: function dispatchRequest()
+    {var config = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      var params = _tuiBase.default.mergeConfig(this.initConfig, config);
+      if (params.requestTaskKey && store.requestTaskStorage(params.requestTaskKey)) {
+        return new Promise(function (resolve, reject) {
+          reject({
+            statusCode: -9999,
+            errMsg: 'request:cancelled' });
+
+        });
+      }
+      var options = _tuiBase.default.getOptions(params);
+      var promise = Promise.resolve(options);
+      promise = promise.then(function (config) {
+        if (params.showLoading) {
+          _tuiBase.default.showLoading();
+        }
+        return new Promise(function (resolve, reject) {
+          var requestTask = uni.request(_objectSpread(_objectSpread({},
+          options), {}, {
+            success: function success(res) {
+              if (params.showLoading) {
+                uni.hideLoading();
+              }
+              resolve(params.concise ? res.data : res);
+            },
+            fail: function fail(err) {
+              if (params.errMsg) {
+                _tuiBase.default.toast(params.errorMsg);
+              }
+              reject(err);
+            },
+            complete: function complete() {
+              store.removeRequestTaskKey(params.requestTaskKey);
+            } }));
+
+
+          if (params.timeout && typeof params.timeout === 'number' && params.timeout > 3000) {
+            setTimeout(function () {
+              try {
+                store.removeRequestTaskKey(params.requestTaskKey);
+                requestTask.abort();
+              } catch (e) {}
+              resolve({
+                statusCode: -9999,
+                errMsg: 'request:cancelled' });
+
+            }, params.timeout);
+          }
+        });
+      });
+      return promise;
+    } }]);return THORUI_INNER;}();
+
+
+
+var inner = new THORUI_INNER(_tuiBase.default.config());
+
+var http = {
+  interceptors: {
+    request: {
+      use: function use(fulfilled, rejected) {
+        inner.request.push({
+          fulfilled: fulfilled,
+          rejected: rejected });
+
+      },
+      eject: function eject(name) {
+        if (inner.request[name]) {
+          inner.request[name] = null;
+        }
+      } },
+
+    response: {
+      use: function use(fulfilled, rejected) {
+        inner.response.push({
+          fulfilled: fulfilled,
+          rejected: rejected });
+
+      },
+      eject: function eject(name) {
+        if (inner.response[name]) {
+          inner.response[name] = null;
+        }
+      } } },
+
+
+  create: function create(config) {
+    inner.initConfig = _tuiBase.default.mergeConfig(_tuiBase.default.config(), config, true);
+  },
+  get: function get(url) {var config = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    config.method = 'GET';
+    config.url = url;
+    return http.request(config);
+  },
+  post: function post(url) {var config = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    config.method = 'POST';
+    config.url = url;
+    return http.request(config);
+  },
+  all: function all(requests) {
+    return Promise.all(requests);
+  },
+  request: function request() {var config = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+    var chain = [inner.dispatchRequest, undefined];
+    var promise = Promise.resolve(config);
+
+    inner.request.forEach(function (interceptor) {
+      chain.unshift(interceptor.fulfilled, interceptor.rejected);
+    });
+
+    inner.response.forEach(function (interceptor) {
+      chain.push(interceptor.fulfilled, interceptor.rejected);
+    });
+
+    while (chain.length) {
+      promise = promise.then(chain.shift(), chain.shift());
+    }
+
+    return promise;
+  } };var _default =
+
+http;exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+
+/***/ 22:
+/*!********************************************************************************!*\
+  !*** /Users/zty/Documents/uniapp/yy/components/common/tui-request/tui-base.js ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var base = {
+  /**
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             * content-type:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             * form=>application/x-www-form-urlencoded
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             * json=>application/json
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             * ......
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             */
+  config: function config() {
+    return {
+      //接口域名：https://base.com
+      host: '',
+      //接口地址：/login
+      url: '',
+      data: {},
+      header: {
+        'content-type': 'application/json' },
+
+      method: 'POST',
+      //大于0时才生效，否则使用全局配置或者默认值
+      timeout: 0,
+      dataType: 'json',
+      //String，不同接口请求名称不可相同，否则会拦截重复key的请求，不传默认不拦截
+      requestTaskKey: '',
+      //是否只返回简洁的接口数据：true 仅返回接口数据data，false 返回包含header、statusCode、errMsg、data等数据
+      concise: false,
+      showLoading: true,
+      errorMsg: '网络不给力，请稍后再试~' };
+
+  },
+  getOptions: function getOptions(config) {
+    var options = _objectSpread({},
+    config);
+
+    ['host', 'timeout', 'requestTaskKey', 'showLoading', 'errorMsg'].forEach(function (item) {
+      delete options[item];
+    });
+    return options;
+  },
+  merge: function merge(a, b) {
+    return Object.assign({}, a, b);
+  },
+  mergeConfig: function mergeConfig(defaultConfig, config, init) {
+    var header = base.merge(defaultConfig.header, config.header || {});
+    var params = base.merge(defaultConfig, config);
+    params.header = header;
+    if (!init) {
+      var url = base.combineURLs(params.host, params.url);
+      params.url = url;
+    }
+    return params;
+  },
+  //如果host为空，则直接使用传入的目标地址
+  combineURLs: function combineURLs(host, target) {
+    return host ? host.replace(/\s+/g, '') + '/' + target.replace(/\s+/g, '').replace(/^\/+/, '') : target;
+  },
+  toast: function toast(text, duration, success) {
+    uni.showToast({
+      title: text || "出错啦~",
+      icon: success ? 'success' : 'none',
+      duration: duration || 2000 });
+
+  },
+  showLoading: function showLoading(title) {var mask = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
+    uni.showLoading({
+      mask: mask,
+      title: title || '请稍候...' });
+
+  } };var _default =
+
+base;exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+
+/***/ 23:
+/*!****************************************************************************************!*\
+  !*** /Users/zty/Documents/uniapp/yy/components/common/tui-request/tui-taskKeyStore.js ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = createTaskKeyStore;function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(o);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _iterableToArray(iter) {if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) return _arrayLikeToArray(arr);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}var RequestTaskKeyStore = /*#__PURE__*/function () {
+  function RequestTaskKeyStore() {var keys = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];_classCallCheck(this, RequestTaskKeyStore);
+    this.taskKeyStore = keys;
+  }_createClass(RequestTaskKeyStore, [{ key: "setRequestTaskStorage", value: function setRequestTaskStorage(
+    taskArr, taskKey) {
+      taskKey && taskArr.push(taskKey);
+      this.taskKeyStore = taskArr;
+    } }, { key: "removeRequestTaskKey", value: function removeRequestTaskKey(
+    taskKey) {
+      if (!taskKey) return;
+      var taskArr = _toConsumableArray(this.taskKeyStore);
+      var index = taskArr.indexOf(taskKey);
+      if (~index) {
+        taskArr.splice(index, 1);
+        this.setRequestTaskStorage(taskArr);
+      }
+    } }, { key: "requestTaskStorage", value: function requestTaskStorage(
+    taskKey) {
+      var result = false;
+      if (!taskKey) return result;
+      var taskArr = _toConsumableArray(this.taskKeyStore);
+      if (taskArr.length > 0) {
+        if (~taskArr.indexOf(taskKey)) {
+          result = true;
+        } else {
+          this.setRequestTaskStorage(taskArr, taskKey);
+        }
+      } else {
+        taskKey && this.setRequestTaskStorage(taskArr, taskKey);
+      }
+      return result;
+    } }]);return RequestTaskKeyStore;}();
+
+function createTaskKeyStore() {var keys = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+  return new RequestTaskKeyStore(keys);
+}
+
+/***/ }),
+
+/***/ 231:
 /*!**********************************************************************!*\
   !*** /Users/zty/Documents/uniapp/yy/components/tki-qrcode/qrcode.js ***!
   \**********************************************************************/
@@ -5681,779 +6777,6 @@ function updateUserInfo(params) {
 
 QRCode;exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
-
-/***/ }),
-
-/***/ 19:
-/*!*******************************************************!*\
-  !*** /Users/zty/Documents/uniapp/yy/utils/request.js ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _store = _interopRequireDefault(__webpack_require__(/*! ../store */ 12));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-// const BASE_URL = 'http://127.0.0.1:8083/api';
-// const BASE_URL = 'http://zyyzty.mynatapp.cc/api';
-var BASE_URL = 'http://192.168.1.110:8083/api';
-function request(_ref) {var url = _ref.url,method = _ref.method,data = _ref.data;
-  return new Promise(function (resolve, reject) {
-    uni.request({
-      url: BASE_URL + url,
-      data: data,
-      method: method,
-      header: {
-        Authorization: _store.default.state.user.token },
-
-      success: function success(_ref2) {var data = _ref2.data;
-        if (data.code === 0) {
-          resolve(data.data);
-        } else {
-          uni.showToast({
-            title: data.msg,
-            icon: 'none',
-            mask: true,
-            duration: 5000 });
-
-          reject(data.msg);
-        }
-      },
-      fail: function fail(error) {
-        reject(error);
-
-      },
-      complete: function complete() {
-        // 关闭加载
-        uni.hideLoading();
-      } });
-
-  });
-}var _default =
-
-request;exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
-
-/***/ }),
-
-/***/ 2:
-/*!***********************************!*\
-  !*** (webpack)/buildin/global.js ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-var g;
-
-// This works in non-strict mode
-g = (function() {
-	return this;
-})();
-
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || new Function("return this")();
-} catch (e) {
-	// This works if the window reference is available
-	if (typeof window === "object") g = window;
-}
-
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
-
-module.exports = g;
-
-
-/***/ }),
-
-/***/ 20:
-/*!************************************************************!*\
-  !*** /Users/zty/Documents/uniapp/yy/common/httpRequest.js ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 15));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};} /**
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     * 常用方法封装 请求，文件上传等
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     * @author echo.
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     **/
-var tui = {
-  //接口地址
-  interfaceUrl: function interfaceUrl() {
-    return 'https://www.thorui.cn';
-    //return 'https://test.thorui.cn'
-    //return 'https://uat.thorui.cn'
-    // return 'https://prod.thorui.cn'
-  },
-  toast: function toast(text, duration, success) {
-    uni.showToast({
-      title: text || "出错啦~",
-      icon: success ? 'success' : 'none',
-      duration: duration || 2000 });
-
-  },
-  modal: function modal(title, content, showCancel, callback, confirmColor, confirmText) {
-    uni.showModal({
-      title: title || '提示',
-      content: content,
-      showCancel: showCancel,
-      cancelColor: "#555",
-      confirmColor: confirmColor || "#5677fc",
-      confirmText: confirmText || "确定",
-      success: function success(res) {
-        if (res.confirm) {
-          callback && callback(true);
-        } else {
-          callback && callback(false);
-        }
-      } });
-
-  },
-  isAndroid: function isAndroid() {
-    var res = uni.getSystemInfoSync();
-    return res.platform.toLocaleLowerCase() == "android";
-  },
-  isPhoneX: function isPhoneX() {
-    var res = uni.getSystemInfoSync();
-    var iphonex = false;
-    var models = ['iphonex', 'iphonexr', 'iphonexsmax', 'iphone11', 'iphone11pro', 'iphone11promax'];
-    var model = res.model.replace(/\s/g, "").toLowerCase();
-    if (models.includes(model)) {
-      iphonex = true;
-    }
-    return iphonex;
-  },
-  constNum: function constNum() {
-    var time = 0;
-
-
-
-    return time;
-  },
-  delayed: null,
-  showLoading: function showLoading(title) {var mask = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
-    uni.showLoading({
-      mask: mask,
-      title: title || '请稍候...' });
-
-  },
-  /**
-      * 请求数据处理
-      * @param string url 请求地址
-      * @param string method 请求方式
-      *  GET or POST
-      * @param {*} postData 请求参数
-      * @param bool isDelay 是否延迟显示loading
-      * @param bool isForm 数据格式
-      *  true: 'application/x-www-form-urlencoded'
-      *  false:'application/json'
-      * @param bool hideLoading 是否隐藏loading
-      *  true: 隐藏
-      *  false:显示
-      */
-  request: function () {var _request = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee(url, method, postData, isDelay, isForm, hideLoading) {var loadding;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:
-              //接口请求
-              loadding = false;
-              tui.delayed && uni.hideLoading();
-              clearTimeout(tui.delayed);
-              tui.delayed = null;
-              if (!hideLoading) {
-                if (isDelay) {
-                  tui.delayed = setTimeout(function () {
-                    loadding = true;
-                    tui.showLoading();
-                  }, 1000);
-                } else {
-                  loadding = true;
-                  tui.showLoading();
-                }
-              }return _context.abrupt("return",
-
-              new Promise(function (resolve, reject) {
-                uni.request({
-                  url: tui.interfaceUrl() + url,
-                  data: postData,
-                  header: {
-                    'content-type': isForm ? 'application/x-www-form-urlencoded' : 'application/json',
-                    'Authorization': tui.getToken() },
-
-                  method: method, //'GET','POST'
-                  dataType: 'json',
-                  success: function success(res) {
-                    clearTimeout(tui.delayed);
-                    tui.delayed = null;
-                    if (loadding && !hideLoading) {
-                      uni.hideLoading();
-                    }
-                    resolve(res.data);
-                  },
-                  fail: function fail(res) {
-                    clearTimeout(tui.delayed);
-                    tui.delayed = null;
-                    tui.toast("网络不给力，请稍后再试~");
-                    reject(res);
-                  } });
-
-              }));case 6:case "end":return _context.stop();}}}, _callee);}));function request(_x, _x2, _x3, _x4, _x5, _x6) {return _request.apply(this, arguments);}return request;}(),
-
-  /**
-                                                                                                                                                                                         * 上传文件
-                                                                                                                                                                                         * @param string url 请求地址
-                                                                                                                                                                                         * @param string src 文件路径
-                                                                                                                                                                                         */
-  uploadFile: function uploadFile(url, src) {
-    tui.showLoading();
-    return new Promise(function (resolve, reject) {
-      var uploadTask = uni.uploadFile({
-        url: tui.interfaceUrl() + url,
-        filePath: src,
-        name: 'imageFile',
-        header: {
-          'Authorization': tui.getToken() },
-
-        formData: {
-          // sizeArrayText:""
-        },
-        success: function success(res) {
-          uni.hideLoading();
-          var d = JSON.parse(res.data.replace(/\ufeff/g, "") || "{}");
-          if (d.code % 100 == 0) {
-            //返回图片地址
-            var fileObj = d.data;
-            resolve(fileObj);
-          } else {
-            that.toast(res.msg);
-          }
-        },
-        fail: function fail(res) {
-          reject(res);
-          that.toast(res.msg);
-        } });
-
-    });
-  },
-  tuiJsonp: function tuiJsonp(url, callback, callbackname) {
-
-
-
-
-
-
-
-
-  },
-  //设置用户信息
-  setUserInfo: function setUserInfo(mobile, token) {
-    //uni.setStorageSync("thorui_token", token)
-    uni.setStorageSync("thorui_mobile", mobile);
-  },
-  //获取token
-  getToken: function getToken() {
-    return uni.getStorageSync("thorui_token");
-  },
-  //判断是否登录
-  isLogin: function isLogin() {
-    return uni.getStorageSync("thorui_mobile") ? true : false;
-  },
-  //跳转页面，校验登录状态
-  href: function href(url, isVerify) {
-    if (isVerify && !tui.isLogin()) {
-      uni.navigateTo({
-        url: '/pages/common/login/login' });
-
-    } else {
-      uni.navigateTo({
-        url: url });
-
-    }
-  } };var _default =
-
-
-tui;exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
-
-/***/ }),
-
-/***/ 21:
-/*!*****************************************************************************!*\
-  !*** /Users/zty/Documents/uniapp/yy/components/common/tui-request/index.js ***!
-  \*****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
-
-
-
-
-
-
-var _tuiBase = _interopRequireDefault(__webpack_require__(/*! ./tui-base.js */ 22));
-var _tuiTaskKeyStore = _interopRequireDefault(__webpack_require__(/*! ./tui-taskKeyStore.js */ 23));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}
-
-var store = (0, _tuiTaskKeyStore.default)();var
-
-THORUI_INNER = /*#__PURE__*/function () {
-  function THORUI_INNER() {var initConfig = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};_classCallCheck(this, THORUI_INNER);
-    this.initConfig = initConfig;
-    this.request = [];
-    this.response = [];
-    this.dispatchRequest = this.dispatchRequest.bind(this);
-  }_createClass(THORUI_INNER, [{ key: "dispatchRequest", value: function dispatchRequest()
-    {var config = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-      var params = _tuiBase.default.mergeConfig(this.initConfig, config);
-      if (params.requestTaskKey && store.requestTaskStorage(params.requestTaskKey)) {
-        return new Promise(function (resolve, reject) {
-          reject({
-            statusCode: -9999,
-            errMsg: 'request:cancelled' });
-
-        });
-      }
-      var options = _tuiBase.default.getOptions(params);
-      var promise = Promise.resolve(options);
-      promise = promise.then(function (config) {
-        if (params.showLoading) {
-          _tuiBase.default.showLoading();
-        }
-        return new Promise(function (resolve, reject) {
-          var requestTask = uni.request(_objectSpread(_objectSpread({},
-          options), {}, {
-            success: function success(res) {
-              if (params.showLoading) {
-                uni.hideLoading();
-              }
-              resolve(params.concise ? res.data : res);
-            },
-            fail: function fail(err) {
-              if (params.errMsg) {
-                _tuiBase.default.toast(params.errorMsg);
-              }
-              reject(err);
-            },
-            complete: function complete() {
-              store.removeRequestTaskKey(params.requestTaskKey);
-            } }));
-
-
-          if (params.timeout && typeof params.timeout === 'number' && params.timeout > 3000) {
-            setTimeout(function () {
-              try {
-                store.removeRequestTaskKey(params.requestTaskKey);
-                requestTask.abort();
-              } catch (e) {}
-              resolve({
-                statusCode: -9999,
-                errMsg: 'request:cancelled' });
-
-            }, params.timeout);
-          }
-        });
-      });
-      return promise;
-    } }]);return THORUI_INNER;}();
-
-
-
-var inner = new THORUI_INNER(_tuiBase.default.config());
-
-var http = {
-  interceptors: {
-    request: {
-      use: function use(fulfilled, rejected) {
-        inner.request.push({
-          fulfilled: fulfilled,
-          rejected: rejected });
-
-      },
-      eject: function eject(name) {
-        if (inner.request[name]) {
-          inner.request[name] = null;
-        }
-      } },
-
-    response: {
-      use: function use(fulfilled, rejected) {
-        inner.response.push({
-          fulfilled: fulfilled,
-          rejected: rejected });
-
-      },
-      eject: function eject(name) {
-        if (inner.response[name]) {
-          inner.response[name] = null;
-        }
-      } } },
-
-
-  create: function create(config) {
-    inner.initConfig = _tuiBase.default.mergeConfig(_tuiBase.default.config(), config, true);
-  },
-  get: function get(url) {var config = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-    config.method = 'GET';
-    config.url = url;
-    return http.request(config);
-  },
-  post: function post(url) {var config = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-    config.method = 'POST';
-    config.url = url;
-    return http.request(config);
-  },
-  all: function all(requests) {
-    return Promise.all(requests);
-  },
-  request: function request() {var config = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-    var chain = [inner.dispatchRequest, undefined];
-    var promise = Promise.resolve(config);
-
-    inner.request.forEach(function (interceptor) {
-      chain.unshift(interceptor.fulfilled, interceptor.rejected);
-    });
-
-    inner.response.forEach(function (interceptor) {
-      chain.push(interceptor.fulfilled, interceptor.rejected);
-    });
-
-    while (chain.length) {
-      promise = promise.then(chain.shift(), chain.shift());
-    }
-
-    return promise;
-  } };var _default =
-
-http;exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
-
-/***/ }),
-
-/***/ 22:
-/*!********************************************************************************!*\
-  !*** /Users/zty/Documents/uniapp/yy/components/common/tui-request/tui-base.js ***!
-  \********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var base = {
-  /**
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             * content-type:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             * form=>application/x-www-form-urlencoded
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             * json=>application/json
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             * ......
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             */
-  config: function config() {
-    return {
-      //接口域名：https://base.com
-      host: '',
-      //接口地址：/login
-      url: '',
-      data: {},
-      header: {
-        'content-type': 'application/json' },
-
-      method: 'POST',
-      //大于0时才生效，否则使用全局配置或者默认值
-      timeout: 0,
-      dataType: 'json',
-      //String，不同接口请求名称不可相同，否则会拦截重复key的请求，不传默认不拦截
-      requestTaskKey: '',
-      //是否只返回简洁的接口数据：true 仅返回接口数据data，false 返回包含header、statusCode、errMsg、data等数据
-      concise: false,
-      showLoading: true,
-      errorMsg: '网络不给力，请稍后再试~' };
-
-  },
-  getOptions: function getOptions(config) {
-    var options = _objectSpread({},
-    config);
-
-    ['host', 'timeout', 'requestTaskKey', 'showLoading', 'errorMsg'].forEach(function (item) {
-      delete options[item];
-    });
-    return options;
-  },
-  merge: function merge(a, b) {
-    return Object.assign({}, a, b);
-  },
-  mergeConfig: function mergeConfig(defaultConfig, config, init) {
-    var header = base.merge(defaultConfig.header, config.header || {});
-    var params = base.merge(defaultConfig, config);
-    params.header = header;
-    if (!init) {
-      var url = base.combineURLs(params.host, params.url);
-      params.url = url;
-    }
-    return params;
-  },
-  //如果host为空，则直接使用传入的目标地址
-  combineURLs: function combineURLs(host, target) {
-    return host ? host.replace(/\s+/g, '') + '/' + target.replace(/\s+/g, '').replace(/^\/+/, '') : target;
-  },
-  toast: function toast(text, duration, success) {
-    uni.showToast({
-      title: text || "出错啦~",
-      icon: success ? 'success' : 'none',
-      duration: duration || 2000 });
-
-  },
-  showLoading: function showLoading(title) {var mask = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
-    uni.showLoading({
-      mask: mask,
-      title: title || '请稍候...' });
-
-  } };var _default =
-
-base;exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
-
-/***/ }),
-
-/***/ 23:
-/*!****************************************************************************************!*\
-  !*** /Users/zty/Documents/uniapp/yy/components/common/tui-request/tui-taskKeyStore.js ***!
-  \****************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = createTaskKeyStore;function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(o);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _iterableToArray(iter) {if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) return _arrayLikeToArray(arr);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}var RequestTaskKeyStore = /*#__PURE__*/function () {
-  function RequestTaskKeyStore() {var keys = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];_classCallCheck(this, RequestTaskKeyStore);
-    this.taskKeyStore = keys;
-  }_createClass(RequestTaskKeyStore, [{ key: "setRequestTaskStorage", value: function setRequestTaskStorage(
-    taskArr, taskKey) {
-      taskKey && taskArr.push(taskKey);
-      this.taskKeyStore = taskArr;
-    } }, { key: "removeRequestTaskKey", value: function removeRequestTaskKey(
-    taskKey) {
-      if (!taskKey) return;
-      var taskArr = _toConsumableArray(this.taskKeyStore);
-      var index = taskArr.indexOf(taskKey);
-      if (~index) {
-        taskArr.splice(index, 1);
-        this.setRequestTaskStorage(taskArr);
-      }
-    } }, { key: "requestTaskStorage", value: function requestTaskStorage(
-    taskKey) {
-      var result = false;
-      if (!taskKey) return result;
-      var taskArr = _toConsumableArray(this.taskKeyStore);
-      if (taskArr.length > 0) {
-        if (~taskArr.indexOf(taskKey)) {
-          result = true;
-        } else {
-          this.setRequestTaskStorage(taskArr, taskKey);
-        }
-      } else {
-        taskKey && this.setRequestTaskStorage(taskArr, taskKey);
-      }
-      return result;
-    } }]);return RequestTaskKeyStore;}();
-
-function createTaskKeyStore() {var keys = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
-  return new RequestTaskKeyStore(keys);
-}
-
-/***/ }),
-
-/***/ 237:
-/*!*****************************************************************************!*\
-  !*** /Users/zty/Documents/uniapp/yy/components/thorui/tui-icon/tui-icon.js ***!
-  \*****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
-  "about": "\uE772",
-  "about-fill": "\uE771",
-  "add": "\uE770",
-  "add-fill": "\uE76F",
-  "addmessage": "\uE76E",
-  "addressbook": "\uE76D",
-  "agree": "\uE76C",
-  "agree-fill": "\uE76B",
-  "alarm": "\uE76A",
-  "alarm-fill": "\uE769",
-  "alipay": "\uE768",
-  "android": "\uE767",
-  "applets": "\uE766",
-  "arrowdown": "\uE765",
-  "arrowleft": "\uE764",
-  "arrowright": "\uE763",
-  "arrowup": "\uE762",
-  "attestation": "\uE761",
-  "back": "\uE760",
-  "bag": "\uE75F",
-  "bag-fill": "\uE75E",
-  "balloon": "\uE75D",
-  "bankcard": "\uE75C",
-  "bankcard-fill": "\uE75B",
-  "bottom": "\uE75A",
-  "calendar": "\uE759",
-  "camera": "\uE758",
-  "camera-fill": "\uE757",
-  "camera-add": "\uE756",
-  "card": "\uE755",
-  "card-fill": "\uE754",
-  "cart": "\uE753",
-  "cart-fill": "\uE752",
-  "category": "\uE751",
-  "category-fill": "\uE750",
-  "check": "\uE74F",
-  "circle": "\uE74E",
-  "circle-fill": "\uE74D",
-  "circle-selected": "\uE74C",
-  "clock": "\uE74B",
-  "clock-fill": "\uE74A",
-  "close": "\uE749",
-  "close-fill": "\uE748",
-  "community": "\uE747",
-  "community-fill": "\uE746",
-  "computer": "\uE745",
-  "computer-fill": "\uE744",
-  "coupon": "\uE743",
-  "delete": "\uE742",
-  "deletekey": "\uE741",
-  "dingtalk": "\uE740",
-  "dissatisfied": "\uE73F",
-  "down": "\uE73E",
-  "download": "\uE73D",
-  "edit": "\uE73C",
-  "ellipsis": "\uE73B",
-  "enlarge": "\uE73A",
-  "evaluate": "\uE739",
-  "exchange": "\uE738",
-  "explain": "\uE737",
-  "explain-fill": "\uE736",
-  "explore": "\uE735",
-  "explore-fill": "\uE734",
-  "eye": "\uE733",
-  "feedback": "\uE732",
-  "fingerprint": "\uE730",
-  "friendadd": "\uE72F",
-  "friendadd-fill": "\uE72E",
-  "gps": "\uE72D",
-  "histogram": "\uE72C",
-  "home": "\uE72B",
-  "home-fill": "\uE72A",
-  "house": "\uE729",
-  "imface": "\uE728",
-  "imkeyboard": "\uE727",
-  "immore": "\uE726",
-  "imvoice": "\uE725",
-  "ios": "\uE724",
-  "kefu": "\uE723",
-  "label": "\uE722",
-  "label-fill": "\uE721",
-  "like": "\uE720",
-  "like-fill": "\uE71F",
-  "link": "\uE71E",
-  "listview": "\uE71D",
-  "loading": "\uE71C",
-  "location": "\uE71B",
-  "mail": "\uE71A",
-  "mail-fill": "\uE719",
-  "manage": "\uE718",
-  "manage-fill": "\uE717",
-  "member": "\uE716",
-  "member-fill": "\uE715",
-  "message": "\uE714",
-  "message-fill": "\uE713",
-  "mobile": "\uE712",
-  "moments": "\uE711",
-  "more": "\uE710",
-  "more-fill": "\uE70F",
-  "narrow": "\uE70E",
-  "news": "\uE70D",
-  "news-fill": "\uE70C",
-  "nodata": "\uE70B",
-  "notice": "\uE699",
-  "notice-fill": "\uE698",
-  "offline": "\uE697",
-  "offline-fill": "\uE696",
-  "oppose": "\uE695",
-  "oppose-fill": "\uE694",
-  "order": "\uE693",
-  "partake": "\uE692",
-  "people": "\uE691",
-  "people-fill": "\uE690",
-  "pic": "\uE68F",
-  "pic-fill": "\uE68E",
-  "picture": "\uE68D",
-  "pie": "\uE68C",
-  "plus": "\uE689",
-  "polygonal": "\uE688",
-  "position": "\uE686",
-  "pwd": "\uE685",
-  "qq": "\uE684",
-  "qrcode": "\uE682",
-  "redpacket": "\uE681",
-  "redpacket-fill": "\uE680",
-  "reduce": "\uE67F",
-  "refresh": "\uE67E",
-  "revoke": "\uE67D",
-  "satisfied": "\uE67C",
-  "screen": "\uE67B",
-  "search": "\uE67A",
-  "search-2": "\uE679",
-  "send": "\uE678",
-  "service": "\uE677",
-  "service-fill": "\uE676",
-  "setup": "\uE675",
-  "setup-fill": "\uE674",
-  "share": "\uE673",
-  "share-fill": "\uE672",
-  "shield": "\uE671",
-  "shop": "\uE670",
-  "shop-fill": "\uE66F",
-  "shut": "\uE66E",
-  "signin": "\uE66D",
-  "sina": "\uE66C",
-  "skin": "\uE66B",
-  "soso": "\uE669",
-  "square": "\uE668",
-  "square-fill": "\uE667",
-  "square-selected": "\uE666",
-  "star": "\uE665",
-  "star-fill": "\uE664",
-  "strategy": "\uE663",
-  "sweep": "\uE662",
-  "time": "\uE661",
-  "time-fill": "\uE660",
-  "todown": "\uE65F",
-  "toleft": "\uE65E",
-  "tool": "\uE65D",
-  "top": "\uE65C",
-  "toright": "\uE65B",
-  "towardsleft": "\uE65A",
-  "towardsright": "\uE659",
-  "towardsright-fill": "\uE658",
-  "transport": "\uE657",
-  "transport-fill": "\uE656",
-  "turningdown": "\uE654",
-  "turningleft": "\uE653",
-  "turningright": "\uE652",
-  "turningup": "\uE651",
-  "unreceive": "\uE650",
-  "seen": "\uE7D2",
-  "unseen": "\uE7D1",
-  "up": "\uE64E",
-  "upload": "\uE64C",
-  "video": "\uE64B",
-  "voice": "\uE649",
-  "voice-fill": "\uE648",
-  "voipphone": "\uE647",
-  "wallet": "\uE646",
-  "warning": "\uE645",
-  "wealth": "\uE644",
-  "wealth-fill": "\uE643",
-  "weather": "\uE642",
-  "wechat": "\uE641",
-  "wifi": "\uE640",
-  "play": "\uE7D5",
-  "suspend": "\uE7D4" };exports.default = _default;
 
 /***/ }),
 
@@ -11984,7 +12307,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"NODE_ENV":"development","VUE_APP_NAME":"ThorUI-Hello","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"NODE_ENV":"development","VUE_APP_NAME":"扬扬毕业设计","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -12005,14 +12328,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"ThorUI-Hello","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"扬扬毕业设计","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"ThorUI-Hello","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"扬扬毕业设计","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -12098,7 +12421,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = this.$shouldDiffData === false ? data : diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"ThorUI-Hello","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"扬扬毕业设计","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -13406,326 +13729,73 @@ function sendMessageToUser(params) {
 
 /***/ }),
 
-/***/ 82:
-/*!***********************************************************************************!*\
-  !*** /Users/zty/Documents/uniapp/yy/components/thorui/tui-form/tui-validation.js ***!
-  \***********************************************************************************/
+/***/ 83:
+/*!***************************************************!*\
+  !*** /Users/zty/Documents/uniapp/yy/api/punch.js ***!
+  \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;function _createForOfIteratorHelper(o, allowArrayLike) {var it;if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) {if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") {if (it) o = it;var i = 0;var F = function F() {};return { s: F, n: function n() {if (i >= o.length) return { done: true };return { done: false, value: o[i++] };}, e: function e(_e) {throw _e;}, f: F };}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}var normalCompletion = true,didErr = false,err;return { s: function s() {it = o[Symbol.iterator]();}, n: function n() {var step = it.next();normalCompletion = step.done;return step;}, e: function e(_e2) {didErr = true;err = _e2;}, f: function f() {try {if (!normalCompletion && it.return != null) it.return();} finally {if (didErr) throw err;}} };}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(o);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;} /**
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * 表单验证
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * @author echo.
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            * @version 1.6.6
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            **/
+Object.defineProperty(exports, "__esModule", { value: true });exports.getTitleList = getTitleList;exports.answerTheQuestion = answerTheQuestion;exports.getLatitudeAndLongitude = getLatitudeAndLongitude;var _request = _interopRequireDefault(__webpack_require__(/*! ../utils/request */ 19));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
-var form = {
-  //非必填情况下,如果值为空,则不进行校验
-  //当出现错误时返回错误消息，否则返回空即为验证通过
-  /*
-   formData:Object 表单对象。{key:value,key:value},key==rules.name
-   rules: Array [{name:name,rule:[],msg:[],validator:[],{name:name,rule:[],msg:[],validator:[]}]
-  		name:name 属性=> 元素的名称
-  		rule:字符串数组 ["required","isMobile","isEmail","isCarNo","isIdCard","isAmount","isNum","isChinese","isNotChinese","isEnglish",isEnAndNo","isSpecial","isEmoji",""isDate","isUrl","isSame:key","range:[1,9]","minLength:9","maxLength:Number","isKeyword:key1,key2,key3..."]
-  		msg:数组 []。 与数组 rule 长度相同,对应的错误提示信息
-  		validator:[{msg:'错误消息',method:Function}]，自定义验证方法组，函数约定：(value)=>{ return true or false}
-  */
-  validation: function validation(formData, rules) {var _iterator = _createForOfIteratorHelper(
-    rules),_step;try {for (_iterator.s(); !(_step = _iterator.n()).done;) {var item = _step.value;
-        var key = item.name;
-        var rule = item.rule;
-        var validator = item.validator;
-        var msgArr = item.msg;
-        if (!key || !rule || rule.length === 0 || !msgArr || msgArr.length === 0 || !~rule.indexOf(
-        "required") && formData[key].toString().
-        length === 0) {
-          continue;
-        }
-        for (var i = 0, length = rule.length; i < length; i++) {
-          var ruleItem = rule[i];
-          var msg = msgArr[i];
-          if (!msg || !ruleItem) continue;
-          //数据处理
-          var value = null;
-          if (~ruleItem.indexOf(":")) {
-            var temp = ruleItem.split(":");
-            ruleItem = temp[0];
-            value = temp[1];
-          }
-          var isError = false;
-          switch (ruleItem) {
-            case "required":
-              isError = form._isNullOrEmpty(formData[key]);
-              break;
-            case "isMobile":
-              isError = !form._isMobile(formData[key]);
-              break;
-            case "isEmail":
-              isError = !form._isEmail(formData[key]);
-              break;
-            case "isCarNo":
-              isError = !form._isCarNo(formData[key]);
-              break;
-            case "isIdCard":
-              isError = !form._isIdCard(formData[key]);
-              break;
-            case "isAmount":
-              isError = !form._isAmount(formData[key]);
-              break;
-            case "isNum":
-              isError = !form._isNum(formData[key]);
-              break;
-            case "isChinese":
-              isError = !form._isChinese(formData[key]);
-              break;
-            case "isNotChinese":
-              isError = !form._isNotChinese(formData[key]);
-              break;
-            case "isEnglish":
-              isError = !form._isEnglish(formData[key]);
-              break;
-            case "isEnAndNo":
-              isError = !form._isEnAndNo(formData[key]);
-              break;
-            case "isEnOrNo":
-              isError = !form._isEnOrNo(formData[key]);
-              break;
-            case "isSpecial":
-              isError = form._isSpecial(formData[key]);
-              break;
-            case "isEmoji":
-              isError = form._isEmoji(formData[key]);
-              break;
-            case "isDate":
-              isError = !form._isDate(formData[key]);
-              break;
-            case "isUrl":
-              isError = !form._isUrl(formData[key]);
-              break;
-            case "isSame":
-              isError = !form._isSame(formData[key], formData[value]);
-              break;
-            case "range":
-              var range = null;
-              try {
-                range = JSON.parse(value);
-                if (range.length <= 1) {
-                  throw new Error("range值传入有误！");
-                }
-              } catch (e) {
-                return "range值传入有误！";
-              }
-              isError = !form._isRange(formData[key], range[0], range[1]);
-              break;
-            case "minLength":
-              isError = !form._minLength(formData[key], value);
-              break;
-            case "maxLength":
-              isError = !form._maxLength(formData[key], value);
-              break;
-            case "isKeyword":
-              isError = !form._isKeyword(formData[key], value);
-              break;
-            default:
-              break;}
+function getTitleList() {
+  return (0, _request.default)({
+    url: '/punch/getTitleList',
+    method: 'GET' });
 
+}
 
-          if (isError) {
-            return msg;
-          }
-        }
-        if (validator && validator.length > 0) {var _iterator2 = _createForOfIteratorHelper(
-          validator),_step2;try {for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {var model = _step2.value;
-              var func = model.method;
-              if (func && !func(formData[key])) {
-                return model.msg;
-              }
-            }} catch (err) {_iterator2.e(err);} finally {_iterator2.f();}
-        }
-      }} catch (err) {_iterator.e(err);} finally {_iterator.f();}
-    return "";
-  },
-  //允许填写字符串null或者undefined
-  _isNullOrEmpty: function _isNullOrEmpty(value) {
-    return value === null || value === '' || value === undefined ? true : false;
-  },
-  _isMobile: function _isMobile(value) {
-    return /^(?:13\d|14\d|15\d|16\d|17\d|18\d|19\d)\d{5}(\d{3}|\*{3})$/.test(value);
-  },
-  _isEmail: function _isEmail(value) {
-    return /^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$/.test(value);
-  },
-  _isCarNo: function _isCarNo(value) {
-    // 新能源车牌
-    var xreg =
-    /^[京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领A-Z]{1}[A-Z]{1}(([0-9]{5}[DF]$)|([DF][A-HJ-NP-Z0-9][0-9]{4}$))/;
-    // 旧车牌
-    var creg =
-    /^[京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领A-Z]{1}[A-Z]{1}[A-HJ-NP-Z0-9]{4}[A-HJ-NP-Z0-9挂学警港澳]{1}$/;
-    if (value.length === 7) {
-      return creg.test(value);
-    } else if (value.length === 8) {
-      return xreg.test(value);
-    } else {
-      return false;
-    }
-  },
-  _isIdCard: function _isIdCard(value) {
-    var idCard = value;
-    if (idCard.length == 15) {
-      return this.__isValidityBrithBy15IdCard;
-    } else if (idCard.length == 18) {
-      var arrIdCard = idCard.split("");
-      if (this.__isValidityBrithBy18IdCard(idCard) && this.__isTrueValidateCodeBy18IdCard(arrIdCard)) {
-        return true;
-      } else {
-        return false;
-      }
-    } else {
-      return false;
-    }
-  },
-  __isTrueValidateCodeBy18IdCard: function __isTrueValidateCodeBy18IdCard(arrIdCard) {
-    var sum = 0;
-    var Wi = [7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2, 1];
-    var ValideCode = [1, 0, 10, 9, 8, 7, 6, 5, 4, 3, 2];
-    if (arrIdCard[17].toLowerCase() == 'x') {
-      arrIdCard[17] = 10;
-    }
-    for (var i = 0; i < 17; i++) {
-      sum += Wi[i] * arrIdCard[i];
-    }
-    var valCodePosition = sum % 11;
-    if (arrIdCard[17] == ValideCode[valCodePosition]) {
-      return true;
-    } else {
-      return false;
-    }
-  },
-  __isValidityBrithBy18IdCard: function __isValidityBrithBy18IdCard(idCard18) {
-    var year = idCard18.substring(6, 10);
-    var month = idCard18.substring(10, 12);
-    var day = idCard18.substring(12, 14);
-    var temp_date = new Date(year, parseFloat(month) - 1, parseFloat(day));
-    if (temp_date.getFullYear() != parseFloat(year) || temp_date.getMonth() != parseFloat(month) - 1 ||
-    temp_date.getDate() !=
-    parseFloat(day)) {
-      return false;
-    } else {
-      return true;
-    }
-  },
-  __isValidityBrithBy15IdCard: function __isValidityBrithBy15IdCard(idCard15) {
-    var year = idCard15.substring(6, 8);
-    var month = idCard15.substring(8, 10);
-    var day = idCard15.substring(10, 12);
-    var temp_date = new Date(year, parseFloat(month) - 1, parseFloat(day));
+function answerTheQuestion(params) {
+  return (0, _request.default)({
+    url: '/punch/answerTheQuestion',
+    method: 'POST',
+    data: params });
 
-    if (temp_date.getYear() != parseFloat(year) || temp_date.getMonth() != parseFloat(month) - 1 ||
-    temp_date.getDate() !=
-    parseFloat(day)) {
-      return false;
-    } else {
-      return true;
-    }
-  },
-  _isAmount: function _isAmount(value) {
-    //金额，只允许保留两位小数
-    return /^([0-9]*[.]?[0-9])[0-9]{0,1}$/.test(value);
-  },
-  _isNum: function _isNum(value) {
-    //只能为数字
-    return /^[0-9]+$/.test(value);
-  },
-  //是否全部为中文
-  _isChinese: function _isChinese(value) {
-    var reg = /^[\u4e00-\u9fa5]+$/;
-    return value !== "" && reg.test(value) && !form._isSpecial(value) && !form._isEmoji(value);
-  },
-  //是否不包含中文，可以有特殊字符
-  _isNotChinese: function _isNotChinese(value) {
-    var reg = /.*[\u4e00-\u9fa5]+.*$/;
-    var result = true;
-    if (reg.test(value)) {
-      result = false;
-    }
-    return result;
-  },
-  _isEnglish: function _isEnglish(value) {
-    return /^[a-zA-Z]*$/.test(value);
-  },
-  _isEnAndNo: function _isEnAndNo(value) {
-    //8~20位数字和字母组合
-    return /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,20}$/.test(value);
-  },
-  _isEnOrNo: function _isEnOrNo(value) {
-    //英文或者数字
-    var reg = /.*[\u4e00-\u9fa5]+.*$/;
-    var result = true;
-    if (reg.test(value) || form._isSpecial(value) || form._isEmoji(value)) {
-      result = false;
-    }
-    return result;
-  },
-  _isSpecial: function _isSpecial(value) {
-    //是否包含特殊字符
-    var regEn = /[`~!@#$%^&*()_+<>?:"{},.\/;'[\]]/im,
-    regCn = /[·！#￥（——）：；“”‘、，|《。》？、【】[\]]/im;
-    if (regEn.test(value) || regCn.test(value)) {
-      return true;
-    }
-    return false;
-  },
-  _isEmoji: function _isEmoji(value) {
-    //是否包含表情
-    return /\uD83C[\uDF00-\uDFFF]|\uD83D[\uDC00-\uDE4F]/g.test(value);
-  },
-  _isDate: function _isDate(value) {
-    //2019-10-12
-    var reg =
-    /^(?:(?!0000)[0-9]{4}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-8])|(?:0[13-9]|1[0-2])-(?:29|30)|(?:0[13578]|1[02])-31)|(?:[0-9]{2}(?:0[48]|[2468][048]|[13579][26])|(?:0[48]|[2468][048]|[13579][26])00)-02-29)$/;
-    return reg.test(value);
-  },
-  _isUrl: function _isUrl(value) {
-    return /^((https?|ftp|file):\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(:[0-9]{1,5})?((\/?)|(\/[\\\w_!~*\\'()\\\.;?:@&=+$,%#-]+)+\/?)$/.test(value);
-  },
-  _isSame: function _isSame(value1, value2) {
-    return value1 === value2;
-  },
-  _isRange: function _isRange(value, range1, range2) {
-    if (!range1 && range1 != 0 && !range2 && range2 != 0) {
-      return true;
-    } else if (!range1 && range1 != 0) {
-      return value <= range2;
-    } else if (!range2 && range2 != 0) {
-      return value >= range1;
-    } else {
-      return value >= range1 && value <= range2;
-    }
-  },
-  _minLength: function _minLength(value, min) {
-    return value.length >= Number(min);
-  },
-  _maxLength: function _maxLength(value, max) {
-    return value.length <= Number(max);
-  },
-  _isKeyword: function _isKeyword(value, keywords) {
-    //是否包含关键词，敏感词，多个以英文逗号分隔，包含则为false,弹出提示语！
-    var result = true;
-    if (!keywords) return result;
-    var key = keywords.split(',');
-    for (var i = 0, len = key.length; i < len; i++) {
-      if (~value.indexOf(key[i])) {
-        result = false;
-        break;
-      }
-    }
-    return result;
-  } };var _default =
+}
 
-{
-  validation: form.validation };exports.default = _default;
+function getLatitudeAndLongitude(params) {
+  return (0, _request.default)({
+    url: '/punch/getLatitudeAndLongitude',
+    method: 'GET',
+    data: params });
+
+}
+
+/***/ }),
+
+/***/ 92:
+/*!******************************************************!*\
+  !*** /Users/zty/Documents/uniapp/yy/api/feedback.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.getAllFeedback = getAllFeedback;exports.getFeedbackDetailsById = getFeedbackDetailsById;exports.addFeedback = addFeedback;var _request = _interopRequireDefault(__webpack_require__(/*! ../utils/request */ 19));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+
+function getAllFeedback() {
+  return (0, _request.default)({
+    url: '/feedback/getAllFeedback',
+    method: 'GET' });
+
+}
+
+function getFeedbackDetailsById(params) {
+  return (0, _request.default)({
+    url: '/feedback/getFeedbackDetailsById',
+    method: 'GET',
+    data: params });
+
+}
+
+function addFeedback(params) {
+  return (0, _request.default)({
+    url: '/feedback/addFeedback',
+    method: 'POST',
+    data: params });
+
+}
 
 /***/ })
 

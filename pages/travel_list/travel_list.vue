@@ -4,15 +4,6 @@
       <view class="tui-page__title">出行申请</view>
       <view class="tui-page__desc">查看出行申请列表</view>
     </view>
-    <!--    <view v-for="(item,index) in codes" :key="index" v-show="showCodeButton">-->
-    <!--      <tui-button  @click="creatQrcode">{{ showCode ? '收起出行码' : '获取出行码' }}</tui-button>-->
-    <!--      <view class="qrcode-box" >-->
-    <!--        <view class="qrcode" >-->
-    <!--          <tki-qrcode :val="1" :size="220" ref="qrcode"></tki-qrcode>-->
-    <!--        </view>-->
-    <!--      </view>-->
-
-    <!--    </view>-->
     <view class="tui-page__bd" v-for="(item,index) in travelApplyList" :key="index">
       <tui-list-view backgroundColor="#fff">
         <view class="thorui-preview__hd">
