@@ -74,6 +74,7 @@
 </template>
 
 <script>
+import helper from "../../common/helper"
 import utils from "@/components/common/tui-utils/tui-utils.js"
 import store from '../../store/index.js';
 import tuiUpload from "@/components/thorui/tui-upload/tui-upload"
@@ -103,10 +104,9 @@ export default {
         isOutside: false,
         isAuthorization: false,
       },
-      url: 'http://127.0.0.1:8083/api/file/uploadImg',
+      url: helper.websiteUrl+'/file/uploadImg',
       // url: 'http://192.168.1.100:8083/api/file/uploadImg',
-      // url: 'http://zyyzty.mynatapp.cc/api/fil
-      // e/uploadImg',
+      // url: 'http://zyyzty.mynatapp.cc/api/file/uploadImg',
       header: {
         Authorization: store.state.user.token,
         'Content-Type': 'multipart/form-data'

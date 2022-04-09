@@ -14,6 +14,8 @@
 
 <script>
 	import store from "../../store";
+  import helper from "../../common/helper"
+
   import TuiButton from "../../components/thorui/tui-button/tui-button";
   import {addFeedback} from "../../api/feedback";
 
@@ -31,7 +33,7 @@
           'Content-Type': 'multipart/form-data'
         },
         fileKey: 'img',
-        url: 'http://127.0.0.1:8083/api/file/uploadImg',
+        url: helper.websiteUrl+'/file/uploadImg',
         // url: 'http://192.168.1.100:8083/api/file/uploadImg',
 			};
 		},

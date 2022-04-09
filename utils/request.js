@@ -1,7 +1,9 @@
 import store from '../store';
-// const BASE_URL = 'http://127.0.0.1:8083/api';
+import helper from "../common/helper"
+
+const BASE_URL = helper.websiteUrl;
 // const BASE_URL = 'http://zyyzty.mynatapp.cc/api';
-const BASE_URL = 'http://192.168.1.110:8083/api';
+// const BASE_URL = 'http://192.168.1.110:8083/api';
 function request({ url, method,data}) {
   return new Promise((resolve, reject) => {
     uni.request({

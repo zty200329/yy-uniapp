@@ -39,3 +39,10 @@ export function sendMessageToUser(params) {
     })
 }
 
+export function addDiseaseInfo(params) {
+    return request({
+        url: '/travel/addDiseaseInfo',
+        method: 'POST',
+        data: params
+    })
+}
