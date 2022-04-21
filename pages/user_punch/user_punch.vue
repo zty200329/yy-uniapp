@@ -78,7 +78,7 @@ export default {
         longitude: this.longitude,
         latitude: this.latitude,
         isMiddleRisk: 0,
-        isHighRisk: 1,
+        isHighRisk: 0,
         isHome: 1
       }
       answerTheQuestion(params).then(res => {

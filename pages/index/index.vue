@@ -44,6 +44,10 @@
         <navigator url="../disease_manage/disease_manage" class="update-item">疾病管理</navigator>
 
       </tui-grid-item>
+	  <tui-grid-item :cell="2">
+	    <navigator url="../segregation/segregation" class="update-item">风险地区隔离政策查询</navigator>
+	  
+	  </tui-grid-item>
     </view>
 
   </view>

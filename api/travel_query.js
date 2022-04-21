@@ -14,3 +14,18 @@ export function travelQuery(params) {
 		data: params
 	})
 }
+
+export function getSegregationByCondition(param) {
+	return request({
+		url: '/query/getSegregationByCondition',
+		method: 'GET',
+		data:param
+	})
+}
+
+export function getAllSegregation(param) {
+	return request({
+		url: '/query/getAllSegregation',
+		method: 'GET'
+	})
+}

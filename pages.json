@@ -108,7 +108,16 @@
         }
       }
     }
-  ],
+      ,{
+            "path" : "pages/segregation/segregation",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
   "easycom": {
     "autoscan": true,
     "custom": {
