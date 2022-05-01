@@ -44,7 +44,7 @@
         </view>
         <view class="thorui-preview__bd">
           <view class="thorui-preview__item">
-            <view class="thorui-preview__label">隔离管控开始时间</view>
+            <view class="thorui-preview__label">发布时间</view>
             <view class="thorui-preview__value">{{ item.startTime }}</view>
           </view>
         </view>

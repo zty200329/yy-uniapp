@@ -11,8 +11,8 @@
     <swiper indicator-dots autoplay circular :interval="5000" :duration="150" indicator-color="rgba(255, 255, 255, 0.9)"
             indicator-active-color="#5677fc" class="tui-banner-swiper">
       <swiper-item v-for="(item,index) in banner" :key="index" @tap.stop="bannerDetail(item)">
-        <view class="tui-banner-title">{{item.title}}</view>
-        <image :src='item.cover' class="tui-slide-image" mode="widthFix" />
+        <view class="tui-banner-title">{{ item.title }}</view>
+        <image :src='item.cover' class="tui-slide-image" mode="widthFix"/>
       </swiper-item>
     </swiper>
     <view>
@@ -44,10 +44,16 @@
         <navigator url="../disease_manage/disease_manage" class="update-item">疾病管理</navigator>
 
       </tui-grid-item>
-	  <tui-grid-item :cell="2">
-	    <navigator url="../segregation/segregation" class="update-item">风险地区隔离政策查询</navigator>
-	  
-	  </tui-grid-item>
+      <tui-grid-item :cell="2">
+        <navigator url="../segregation/segregation" class="update-item">风险地区隔离政策查询</navigator>
+
+      </tui-grid-item>
+      <tui-grid-item :cell="2">
+        <navigator url="../apply_medical/apply_medical" class="update-item">就医证明申请</navigator>
+      </tui-grid-item>
+      <tui-grid-item :cell="2">
+        <navigator url="../apply_medical_list/apply_medical_list" class="update-item">就医证明申请列表</navigator>
+      </tui-grid-item>
     </view>
 
   </view>
@@ -74,23 +80,23 @@ export default {
     TuiNoticeBar,
     tuiGridItem,
   },
-  mounted(){
+  mounted() {
     this.loadData()
   },
   methods: {
-    loadData(){
+    loadData() {
       getTopArticleList().then(res => {
         this.banner = res;
       }).catch(err => {
         console.log(err)
       })
     },
-    test(){
+    test() {
 
     },
     bannerDetail(item) {
       uni.navigateTo({
-        url: '/pages/newsDetails/newsDetails?id='+item.id
+        url: '/pages/newsDetails/newsDetails?id=' + item.id
       })
     },
   }
@@ -107,24 +113,26 @@ export default {
 
 .tui-banner-swiper {
   width: 100%;
-  height: 300rpx;
+  height: 300 rpx;
   position: relative;
 }
+
 .tui-slide-image {
   width: 100%;
-  height: 300rpx;
+  height: 300 rpx;
   display: block;
 }
+
 .tui-banner-title {
   width: 100%;
-  height: 100rpx;
+  height: 100 rpx;
   position: absolute;
   z-index: 9999;
   color: #fff;
   bottom: 0;
-  padding: 0 30rpx;
-  padding-top: 25rpx;
-  font-size: 34rpx;
+  padding: 0 30 rpx;
+  padding-top: 25 rpx;
+  font-size: 34 rpx;
   font-weight: bold;
   background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
   box-sizing: border-box;

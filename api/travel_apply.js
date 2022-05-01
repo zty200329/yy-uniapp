@@ -46,3 +46,26 @@ export function addDiseaseInfo(params) {
         data: params
     })
 }
+
+export function submitMedicalApply(params) {
+    return request({
+        url: '/travel/submitMedicalApply',
+        method: 'POST',
+        data: params
+    })
+}
+
+export function getMyMedicalApply(params){
+    return request({
+        url: '/travel/getMyMedicalApply',
+        method: 'GET',
+    })
+}
+
+export function getMedicalApplyById(params){
+    return request({
+        url: '/travel/getMedicalApplyById',
+        method: 'GET',
+        data: params
+    })
+}
